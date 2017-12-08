@@ -1,0 +1,41 @@
+/*
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+*/
+
+
+/* All Devices*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+nav {
+  position: fixed;
+  padding-top: 20px;
+  z-index: 100;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.leftNav {
+float: left;
+}
+
+.rightNav {
+  text-align: right;
+  float: right;
+  padding-top: 10px
+}
+
+.navItem {
+  text-decoration: none;
+  color: black;
+  margin-left: 80px;
+
+}
