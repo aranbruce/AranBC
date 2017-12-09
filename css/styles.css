@@ -320,7 +320,7 @@ h5 {
 }
 
 .carouselImage {
-  width: 65%;
+  width: 50%;
   height: auto;
   padding: 50px 0 0 0;
 }
@@ -398,16 +398,49 @@ button {
 
 /* Fourth Section */
 .fourthSection {
-  height:736px;
+  height:auto;
   width: 100%;
   margin: 0 auto;
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
 }
 
+.aboutParent {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.aboutImage {
+  width: 40%;
+  height: auto;
+  flex-grow: 1;
+  min-width: 250px;
+  margin: 5%;
+}
+
+.aboutMeImage {
+  width: 100%;
+}
+
+.aboutText {
+  width: 40%;
+  height: auto;
+  flex-grow: 1;
+  min-width: 250px;
+  margin: 5%;
+}
+
+#aboutMeHeader {
+  margin-top: 0;
+}
 
 /* Mobile and Tablet*/
 @media screen and (max-width: 768px) {
 
+/* Nav*/
   .rightNav {
     padding-top: 0;
     width: 20%;
@@ -465,10 +498,12 @@ button {
       transform: rotate(45deg) translate(-8px, -8px) ;
   }
 
+/* Headers */
   h1 {
   font-size: 38px;
   }
 
+/* Bubbles */
   #bubble1 {
     top: 200px;
     left: 0%;
@@ -523,14 +558,6 @@ button {
     height: 50px;
     width: 50px;
   }
-
-
-  .carouselLeft {
-  }
-
-  .carouselRight {
-  }
-
 }
 
 /* Desktop*/
@@ -538,7 +565,5 @@ button {
   #Menu {
     display: none;
   }
-
-
 
 }
