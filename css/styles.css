@@ -291,9 +291,16 @@ h5 {
   margin: 0 auto;
 }
 
+.carouselTextAndImage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .carouselLeft {
-  float: left;
-  width: 30%;
+  flex-grow: 1;
+  width: 50%;
+  min-width: 250px;
 }
 
 #carouselItemNumber {
@@ -302,8 +309,20 @@ h5 {
 }
 
 #carouselItemTitle {
-  padding: 0 0 120px 30px;
+  padding: 0 0 0 30px;
   margin: 0;
+}
+
+.carouselRight {
+  flex-grow: 1;
+  width: 50%;
+  min-width: 250px;
+}
+
+.carouselImage {
+  width: 65%;
+  height: auto;
+  padding: 50px 0 0 0;
 }
 
 button {
@@ -341,17 +360,6 @@ button {
 
 #carouselButton {
   margin: 0 0 50px 30px;
-}
-
-.carouselRight {
-  float: right;
-  width: 70%;
-}
-
-.carouselImage {
-  width: 65%;
-  height: auto;
-  padding: 50px 0 0 0;
 }
 
 /* Third Section */
@@ -518,11 +526,9 @@ button {
 
 
   .carouselLeft {
-  width: 100%;
   }
 
   .carouselRight {
-  width: 0;
   }
 
 }
