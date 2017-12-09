@@ -99,6 +99,100 @@ h5 {
   padding-top: 100px;
 }
 
+/* Floating */
+.floating1 {
+  -webkit-animation-name: Floating1;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating1;
+  -moz-animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-func
+}
+
+@-webkit-keyframes Floating1{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(-3px, -8px);}
+    to {-webkit-transform: translate(0, -0px);    }
+}
+
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(-3px, -8px);}
+    to {-moz-transform: translate(0, -0px);}
+}
+
+.floating2 {
+  -webkit-animation-name: Floating2;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating2;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-func
+}
+
+@-webkit-keyframes Floating2{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(2px, -7px);}
+    to {-webkit-transform: translate(0, -0px);    }
+}
+
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(2px, -7px);}
+    to {-moz-transform: translate(0, -0px);}
+}
+
+.floating3 {
+  -webkit-animation-name: Floating3;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating3;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-func
+}
+
+@-webkit-keyframes Floating3{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0px, 14px);}
+    to {-webkit-transform: translate(0, -0px);    }
+}
+
+@-moz-keyframes Floating3{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0px, 14px);}
+    to {-moz-transform: translate(0, -0px);}
+}
+
+.floating4 {
+  -webkit-animation-name: Floating4;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating4;
+  -moz-animation-duration: 2.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-func
+}
+
+@-webkit-keyframes Floating4{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0px, 18px);}
+    to {-webkit-transform: translate(0, -0px);    }
+}
+
+@-moz-keyframes Floating4{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0px, 18px);}
+    to {-moz-transform: translate(0, -0px);}
+}
+
+
 /* First Section */
 .firstSection .secondSection{
   height:100vh;
@@ -110,14 +204,79 @@ h5 {
   width: 65%;
   max-width: 660px;
   margin: 0 auto;
-  padding-top: 22vh;
-  padding-bottom: 22vh;
+  padding-top: 20vh;
+  padding-bottom: 24vh;
   text-align: center;
+}
+
+.bubblesParent {
+}
+
+.bubble {
+  position: absolute;
+  background: linear-gradient(128.09deg, rgba(97,97,97,0.1) 0%, #000000 100%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#bubble1 {
+  top: 200px;
+  left: 10%;
+  height: 80px;
+  width: 80px;
+}
+#bubble2 {
+  top: 120px;
+  left: 30%;
+  height: 30px;
+  width: 30px;
+}
+
+#bubble3 {
+  top: 170px;
+  right: 12%;
+  height: 80px;
+  width: 80px;
+}
+
+#bubble4 {
+  top: 350px;
+  right: 15%;
+  height: 18px;
+  width: 18px;
+}
+
+#bubble5 {
+  top: 550px;
+  left: 15%;
+  height: 65px;
+  width: 65px;
+}
+
+#bubble6 {
+  top: 540px;
+  left: 38%;
+  height: 25px;
+  width: 25px;
+}
+
+#bubble7 {
+  top: 540px;
+  right: 42%;
+  height: 75px;
+  width: 75px;
+}
+
+#bubble8 {
+  top: 490px;
+  right: 15%;
+  height: 50px;
+  width: 50px;
 }
 
 /* Second Section */
 .secondSection {
-  height:110vh;
+  height:100vh;
   width: 100%;
   margin: 0 auto;
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
@@ -143,7 +302,7 @@ h5 {
 }
 
 #carouselItemTitle {
-  padding: 0 0 160px 30px;
+  padding: 0 0 120px 30px;
   width: 15%;
   margin: 0;
 }
@@ -191,7 +350,7 @@ button {
 }
 
 .carouselImage {
-  width: 70%;
+  width: 65%;
   height: auto;
   padding: 50px 0 0 0;
 }
