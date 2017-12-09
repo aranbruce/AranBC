@@ -195,7 +195,7 @@ h5 {
 
 /* First Section */
 .firstSection .secondSection{
-  height:100vh;
+  height:auto;
   width: 100%;
   margin: 0 auto;
 }
@@ -204,8 +204,8 @@ h5 {
   width: 65%;
   max-width: 660px;
   margin: 0 auto;
-  padding-top: 20vh;
-  padding-bottom: 24vh;
+  padding-top: 180px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
@@ -276,7 +276,7 @@ h5 {
 
 /* Second Section */
 .secondSection {
-  height:100vh;
+  height:736px;
   width: 100%;
   margin: 0 auto;
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
@@ -356,7 +356,7 @@ button {
 
 /* Third Section */
 .thirdSection {
-  height:100vh;
+  height:auto;
   width: 100%;
   margin: 0 auto;
 }
@@ -390,7 +390,7 @@ button {
 
 /* Fourth Section */
 .fourthSection {
-  height:100vh;
+  height:736px;
   width: 100%;
   margin: 0 auto;
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
@@ -405,7 +405,7 @@ button {
     width: 20%;
   }
 
-  .navItem{
+  .menu{
       display: none;
     }
 
@@ -430,25 +430,82 @@ button {
       transition: 0.4s;
   }
 
-
-  .carouselLeft {
-  width: 50%;
-  }
-
-  .carouselRight {
-  width: 50%;
-  }
-
   h1 {
   font-size: 42px;
   }
+
+  #bubble1 {
+    top: 200px;
+    left: 0%;
+    height: 20px;
+    width: 20px;
+  }
+  #bubble2 {
+    top: 120px;
+    left: 15%;
+    height: 30px;
+    width: 30px;
+  }
+
+  #bubble3 {
+    top: 170px;
+    right: 0%;
+    height: 30px;
+    width: 30px;
+  }
+
+  #bubble4 {
+    top: 100px;
+    right: 15%;
+    height: 18px;
+    width: 18px;
+  }
+
+  #bubble5 {
+    top: 390px;
+    left: 5%;
+    height: 65px;
+    width: 65px;
+  }
+
+  #bubble6 {
+    top: 540px;
+    left: 38%;
+    height: 25px;
+    width: 25px;
+  }
+
+  #bubble7 {
+    top: 440px;
+    right: 22%;
+    height: 15px;
+    width: 15px;
+  }
+
+  #bubble8 {
+    top: 490px;
+    right: 15%;
+    height: 50px;
+    width: 50px;
+  }
+
+
+  .carouselLeft {
+  width: 100%;
+  }
+
+  .carouselRight {
+  width: 0;
+  }
+
 }
 
-/* Laptop*/
+/* Desktop*/
 @media screen and (min-width: 769px) {
   #Menu {
     display: none;
   }
+
 
 
 }
