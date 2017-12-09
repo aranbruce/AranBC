@@ -6,21 +6,30 @@ html {
 }
 */
 
-
 /* All Devices*/
 body {
   font-family: 'Montserrat', sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 80%;
+  width: 100%;
+  margin: 0;
 }
 
+/* Nav*/
 nav {
   position: fixed;
-  padding-top: 20px;
+  top: 0;
+  left: 0;
+  padding: 15px 0 15px 0;
   z-index: 100;
-  width: 80%;
+  width: 100%;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%, rgba(255,255,255,0) 100%);
+}
+
+.navContent {
   max-width: 1200px;
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .leftNav {
@@ -30,8 +39,8 @@ float: left;
 .rightNav {
   text-align: right;
   float: right;
-  padding-top: 12px;
   width: 80%;
+  padding-top: 12px;
 }
 
 .navItem {
@@ -39,4 +48,64 @@ float: left;
   color: black;
   margin-left: 10%;
 
+}
+
+/* Headers */
+h1 {
+	font-size: 72px;
+	font-weight: 800;
+	letter-spacing: -1px;
+  margin-bottom: 10px
+}
+
+h2 {
+	font-size: 48px;
+	font-weight: 600;
+	letter-spacing: -1px;
+  margin-top: 0;
+}
+
+h4 {
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: -2px;
+  margin-top: 10px
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: -1px;
+  margin-bottom: 0;
+}
+
+/* First Section */
+.firstSection .secondSection{
+  height:100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.centredSectionContent {
+  width: 65%;
+  max-width: 660px;
+  margin: 0 auto;
+  padding-top: 22vh;
+  padding-bottom: 22vh;
+  text-align: center;
+}
+
+/* Second Section */
+.secondSection {
+  height:100vh;
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
+}
+
+.sectionContent {
+  width: 70%;
+  max-width: 840px;
+  margin: 0 auto;
+  padding-top: 150px;
 }
