@@ -65,6 +65,12 @@ h2 {
   margin-top: 0;
 }
 
+h3 {
+	font-size: 36px;
+	font-weight: 600;
+	letter-spacing: -1px;
+}
+
 h4 {
 	font-size: 24px;
 	font-weight: 600;
@@ -76,7 +82,13 @@ h5 {
 	font-size: 18px;
 	font-weight: 600;
 	letter-spacing: -1px;
+  margin-top: 0;
   margin-bottom: 0;
+}
+
+/* Clears */
+.clear {
+    clear: both;
 }
 
 /* First Section */
@@ -97,15 +109,75 @@ h5 {
 
 /* Second Section */
 .secondSection {
-  height:100vh;
+  height:110vh;
   width: 100%;
   margin: 0 auto;
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
 }
 
 .sectionContent {
-  width: 70%;
-  max-width: 840px;
+  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 150px;
+}
+
+.carouselBox {
+  width: 100%;
+  max-width: 840px;
+  background: white;
+  box-shadow: 0 5px 5px 0 rgba(155,155,155,0.4);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.carouselLeft {
+  float: left;
+  width: 30%;
+}
+
+#carouselItemNumber {
+  padding: 50px 0 0 30px;
+  margin: 0;
+}
+
+#carouselItemTitle {
+  padding: 0 0 160px 30px;
+  width: 15%;
+  margin: 0;
+}
+
+button {
+	height: 40px;
+	width: auto;
+	border-radius: 20px;
+  border: none;
+	box-shadow: 0 5px 5px 0 rgba(155,155,155,0.4);
+  -webkit-appearance: value;
+  -moz-appearance:    value;
+  appearance:         value;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	text-align: center;
+  padding: 9px 20px;
+}
+
+.buttonPrimary {
+  	background-color: #FFFFFF;
+}
+
+#carouselButton {
+  margin: 0 0 50px 30px;
+}
+
+.carouselRight {
+  float: right;
+  width: 70%;
+}
+
+.carouselImage {
+  width: 70%;
+  height: auto;
+  padding: 50px 0 0 0;
 }
