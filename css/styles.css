@@ -91,6 +91,14 @@ h5 {
     clear: both;
 }
 
+/* General Section*/
+.sectionContent {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
 /* First Section */
 .firstSection .secondSection{
   height:100vh;
@@ -113,13 +121,6 @@ h5 {
   width: 100%;
   margin: 0 auto;
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
-}
-
-.sectionContent {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 150px;
 }
 
 .carouselBox {
@@ -167,6 +168,19 @@ button {
   	background-color: #FFFFFF;
 }
 
+.buttonPrimary:hover {
+  box-shadow: 0 10px 10px 0 rgba(155,155,155,0.5);
+}
+
+.buttonPrimary:active {
+  box-shadow: 0 8px 8px 0 rgba(155,155,155,0.5);
+  background: rgb(250,250,250 );
+}
+
+.buttonPrimary:focus {
+
+}
+
 #carouselButton {
   margin: 0 0 50px 30px;
 }
@@ -180,4 +194,46 @@ button {
   width: 70%;
   height: auto;
   padding: 50px 0 0 0;
+}
+
+/* Third Section */
+.thirdSection {
+  height:100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.keySkills {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.skill {
+  width: 300px;
+  float: left;
+  padding-bottom: 80px;
+}
+
+.skill ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#skillTitle {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* Fourth Section */
+.fourthSection {
+  height:100vh;
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
 }
