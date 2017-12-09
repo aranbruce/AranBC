@@ -30,12 +30,13 @@ float: left;
 .rightNav {
   text-align: right;
   float: right;
-  padding-top: 10px
+  padding-top: 12px;
+  width: 80%;
 }
 
 .navItem {
   text-decoration: none;
   color: black;
-  margin-left: 80px;
+  margin-left: 10%;
 
 }
