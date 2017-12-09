@@ -26,8 +26,6 @@ function openCloseMenu() {
 
   */
 
-  document.getElementById("body").classList.toggle("stop-scrolling");
-
   }
 
   //Smooth Scrolling for links
