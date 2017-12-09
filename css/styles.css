@@ -437,6 +437,26 @@ button {
   margin-top: 0;
 }
 
+/* Fifth Section */
+
+
+/* Footer */
+footer {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#footerTitle {
+  margin: 36px 0 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
 /* Mobile and Tablet*/
 @media screen and (max-width: 768px) {
 
