@@ -196,6 +196,7 @@ h5 {
 /* First Section */
 .firstSection .secondSection{
   height:auto;
+  min-height: 736px;
   width: 100%;
   margin: 0 auto;
 }
@@ -365,6 +366,7 @@ button {
 /* Third Section */
 .thirdSection {
   height:auto;
+  min-height: 736px;
   width: 100%;
   margin: 0 auto;
 }
