@@ -409,6 +409,13 @@ button {
       display: none;
     }
 
+  .menu.menu.show{
+    display: inline-block;
+    float: left;
+    text-align: left;
+    width: 80%;
+  }
+
   .burgerContainer {
     display: inline-block;
     cursor: pointer;
@@ -418,7 +425,6 @@ button {
   .burgerContainerClose {
     display: inline-block;
     cursor: pointer;
-    position: absolute;
     right: 0;
   }
 
@@ -428,6 +434,18 @@ button {
       background-color: black;
       margin: 9px 0;
       transition: 0.4s;
+  }
+
+  .burgerContainerClose .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-8px, 6px) ;
+      transform: rotate(-45deg) translate(-8px, 6px) ;
+  }
+
+  .burgerContainerClose .bar2 {opacity: 0;}
+
+  .burgerContainerClose .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+      transform: rotate(45deg) translate(-8px, -8px) ;
   }
 
   h1 {
