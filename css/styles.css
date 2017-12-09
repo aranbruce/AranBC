@@ -459,6 +459,11 @@ a {
 
 /* Mobile and Tablet*/
 @media screen and (max-width: 768px) {
+  /* General*/
+  .stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+  }
 
 /* Nav*/
   .rightNav {

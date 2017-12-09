@@ -25,6 +25,9 @@ function openCloseMenu() {
     document.getElementById("bodyBackground").classList.toggle("menuOpen");
 
   */
+
+  document.getElementById("body").classList.toggle("stop-scrolling");
+
   }
 
   //Smooth Scrolling for links
