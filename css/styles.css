@@ -360,6 +360,20 @@ button {
 
 }
 
+.buttonSecondary {
+  background-color: #000000;
+  color: white;
+}
+
+.buttonSecondary:hover {
+  box-shadow: 0 10px 10px 0 rgba(155,155,155,0.5);
+}
+
+.buttonSecondary:active {
+  box-shadow: 0 8px 8px 0 rgba(155,155,155,0.5);
+  background: rgb(50,50,50 );
+}
+
 #carouselButton {
   margin: 0 0 50px 30px;
 }
@@ -444,7 +458,7 @@ button {
 .fifthSection {
   width: 100%;
   height: auto;
-  min-height: 768px;
+  min-height: 736px;
 }
 
 .fifthSectionContent {
@@ -453,8 +467,20 @@ button {
   padding-top: 100px;
 }
 
+.sectionTitle {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
 #getInTouchTitle {
   margin-top: 0;
+}
+
+.formWrapper {
+  margin: auto;
+  width: 300px;
+  text-align: center;
 }
 
 input {
@@ -462,16 +488,33 @@ input {
   margin: auto;
   border: 1px solid rgba(155,155,155,0.4);
   margin-top: 10px;
-  padding-left: 10px;
+  text-indent: 10px;
   margin-bottom: 10px;
   border-radius: 6px;
   height: 25px;
 }
 
+textarea {
+  height: 180px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid rgba(155,155,155,0.4);
+  margin-top: 10px;
+  text-indent: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  padding-top: 8px;
+}
+
+#formButton {
+  margin: auto;
+  margin-top: 40px;
+  width: 150px;
+}
+
 /* Footer */
 footer {
   width: 100%;
-  max-width: 1200px;
   min-height: 50px;
   height: auto;
   margin: auto;
@@ -480,6 +523,7 @@ footer {
 
 .footerContent {
   width: 80%;
+  max-width: 960px;
   margin: auto;
   padding: 20px 0 20px 0;
 }
