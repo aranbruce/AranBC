@@ -1,21 +1,9 @@
-importScripts('./cache-polyfill.js');
-self.addEventListener('install', function(e) {
- e.waitUntil(
-   caches.open('Aran Bruce-Caddick').then(function(cache) {
-     return cache.addAll([
-       '/',
-       '/index.html',
-       '/index.html?launcher=true',
-       '/?launcher=true',
-       '/styles/main.css',
-       '/scripts/jsScripts.js',
-     ]);
-   })
- );
-});
-
-self.addEventListener('fetch', function(event) {
-
-console.log(event.request.url);
-
-});
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js', {
+        scope: '/'
+    }).then(function() {
+        // success
+    }).catch(function(e) {
+        // failed
+    });
+}
