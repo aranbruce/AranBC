@@ -3,19 +3,34 @@
   "name": "Aran Bruce-Caddick",
   "icons": [
     {
-      "src": "images/launcher-icon-1x.png",
+      "src": "images/launcher-icon-48x48.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "images/launcher-icon-2x.png",
+      "src": "images/launcher-icon-96x96.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "images/launcher-icon-4x.png",
+      "src": "images/launcher-icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "images/launcher-icon-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "images/launcher-icon-384x384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "images/launcher-icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "index.html?launcher=true",
