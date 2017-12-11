@@ -14,7 +14,8 @@ self.addEventListener('install', function(event) {
       // And add resources to it
       return cache.addAll([
         './',
-        'style.css',
+        '/index.html',
+        '/css/styles.css',
         'logging.js'
       ]);
     })
