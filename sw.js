@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js', {
+    navigator.serviceWorker.register('./AranBC/sw.js', {
         scope: '/'
     }).then(function() {
         // success
