@@ -492,6 +492,7 @@ input {
   margin-bottom: 10px;
   border-radius: 6px;
   height: 25px;
+  -webkit-appearance: none;
 }
 
 textarea {
@@ -504,6 +505,7 @@ textarea {
   margin-bottom: 10px;
   border-radius: 6px;
   padding-top: 8px;
+  -webkit-appearance: none;
 }
 
 #formButton {
@@ -614,7 +616,7 @@ a {
 /* Bubbles */
   #bubble1 {
     top: 200px;
-    left: 0%;
+    left: 3%;
     height: 20px;
     width: 20px;
   }
@@ -627,7 +629,7 @@ a {
 
   #bubble3 {
     top: 170px;
-    right: 0%;
+    right: 1%;
     height: 30px;
     width: 30px;
   }
@@ -640,7 +642,7 @@ a {
   }
 
   #bubble5 {
-    top: 390px;
+    top: 440px;
     left: 5%;
     height: 65px;
     width: 65px;
@@ -654,7 +656,7 @@ a {
   }
 
   #bubble7 {
-    top: 440px;
+    top: 450px;
     right: 22%;
     height: 15px;
     width: 15px;
