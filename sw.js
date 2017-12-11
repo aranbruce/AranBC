@@ -6,11 +6,10 @@ self.addEventListener('install', function(e) {
      return cache.addAll([
        '/',
        '/index.html',
-       '/index.html?homescreen=1',
-       '/?homescreen=1',
+       '/index.html?launcher=true',
+       '/?launcher=true',
        '/styles/main.css',
-       '/scripts/main.min.js',
-       '/sounds/airhorn.mp3'
+       '/scripts/jsScripts.js',
      ]);
    })
  );
