@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js', {
+    navigator.serviceWorker.register('./sw.js', {
         scope: '/'
     }).then(function() {
         // success
@@ -11,12 +11,12 @@ if ('serviceWorker' in navigator) {
 var CACHE_NAME = 'cache-v1';
 
 var resourcesToCache = [
-  '/',
-  '/css/styles.css',
-  '/scripts/jsScripts.js',
-  '/index.html',
-  '/manifest.json',
-  '/favicon.png'
+  './',
+  './css/styles.css',
+  './scripts/jsScripts.js',
+  './index.html',
+  './manifest.json',
+  './favicon.png'
 ];
 
 self.addEventListener('install', function(event) {
