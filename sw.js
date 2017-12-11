@@ -14,6 +14,8 @@ self.addEventListener('install', function(event) {
       // And add resources to it
       return cache.addAll([
         'index.html',
+        'manifest.json'
+        'favicon.png'
         'logging.js'
       ]);
     })
