@@ -15,17 +15,7 @@ var resourcesToCache = [
   '/css/styles.css',
   '/scripts/jsScripts.js',
   '/index.html',
+  '/index.html?launcher=true',
   '/manifest.json',
   '/favicon.png'
 ];
-
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    // open the app browser cache
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        // add all app assets to the cache
-        return cache.addAll(resourcesToCache);
-      })
-  );
-});
