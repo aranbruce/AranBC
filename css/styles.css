@@ -278,7 +278,7 @@ h5 {
 /* Second Section */
 .secondSection {
   height:100vh;
-  min-height: 736px;
+  min-height: 780px;
   width: 100%;
   margin: 0 auto;
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
