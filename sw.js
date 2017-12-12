@@ -42,7 +42,22 @@ self.addEventListener('fetch', function(e) {
         console.log("[ServiceWorker] Found in cache", e.request.url);
         return response;
       }
-      return fetch(e.request);
+      var requestClone = e.request.clone();
+      fetch(requestClone).then(function(response) {
+        if (!response) {
+          console.log("[ServiceWorker] No response from fetch");
+          return response;
+        }
+        var responseClone = response.clone();
+        caches.open(cacheName).then(function(cache) {
+          cache.put(e.request, responseClone);
+          return response;
+        });
+
+      })
+      .catch(function(error) {
+        console.log("[ServiceWorker] Error Fetching and Caching New Data");
+      })
     })
   )
 })
