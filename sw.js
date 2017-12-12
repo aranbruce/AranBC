@@ -4,7 +4,7 @@ var cacheFiles = [
   'favicon.png',
   'css/styles.css',
   'images/aboutMe.png',
-  'citySnappImage.png',
+  'images/citySnappImage.png',
   'scripts/jsScripts.js',
   'https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800',
   'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'
