@@ -2,7 +2,7 @@ self.addEventListener('install', function(e) {
   console.log("[ServiceWorker] Installed")
 })
 
-self.addEventListener('active', function(e) {
+self.addEventListener('activate', function(e) {
   console.log("[ServiceWorker] Activated")
 })
 
