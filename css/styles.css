@@ -96,7 +96,7 @@ h5 {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 25vh;
 }
 
 /* Floating */
@@ -194,8 +194,8 @@ h5 {
 
 
 /* First Section */
-.firstSection .secondSection{
-  height:auto;
+.firstSection {
+  height:100vh;
   min-height: 736px;
   width: 100%;
   margin: 0 auto;
@@ -205,7 +205,7 @@ h5 {
   width: 65%;
   max-width: 660px;
   margin: 0 auto;
-  padding-top: 180px;
+  padding-top: 30vh;
   padding-bottom: 200px;
   text-align: center;
 }
@@ -221,55 +221,55 @@ h5 {
 }
 
 #bubble1 {
-  top: 200px;
+  top: 28vh;
   left: 10%;
   height: 80px;
   width: 80px;
 }
 #bubble2 {
-  top: 120px;
+  top: 17vh;
   left: 30%;
   height: 30px;
   width: 30px;
 }
 
 #bubble3 {
-  top: 170px;
+  top: 22vh;
   right: 12%;
   height: 80px;
   width: 80px;
 }
 
 #bubble4 {
-  top: 350px;
+  top: 47vh;
   right: 15%;
   height: 18px;
   width: 18px;
 }
 
 #bubble5 {
-  top: 550px;
+  top: 68vh;
   left: 15%;
   height: 65px;
   width: 65px;
 }
 
 #bubble6 {
-  top: 550px;
+  top: 85vh;
   left: 38%;
   height: 25px;
   width: 25px;
 }
 
 #bubble7 {
-  top: 580px;
+  top: 81vh;
   right: 42%;
   height: 75px;
   width: 75px;
 }
 
 #bubble8 {
-  top: 490px;
+  top: 72vh;
   right: 15%;
   height: 50px;
   width: 50px;
@@ -277,7 +277,8 @@ h5 {
 
 /* Second Section */
 .secondSection {
-  height:736px;
+  height:100vh;
+  min-height: 736px;
   width: 100%;
   margin: 0 auto;
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
@@ -380,8 +381,7 @@ button {
 
 /* Third Section */
 .thirdSection {
-  height:auto;
-  min-height: 736px;
+  min-height: 100vh;
   width: 100%;
   margin: 0 auto;
 }
@@ -415,7 +415,8 @@ button {
 
 /* Fourth Section */
 .fourthSection {
-  height:auto;
+  height:100vh;
+  min-height: 780px;
   width: 100%;
   margin: 0 auto;
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
@@ -424,7 +425,7 @@ button {
 .aboutParent {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 100px;
+  padding-top: 25vh;
   width: 80%;
   margin: auto;
   justify-content: space-between;
@@ -439,7 +440,9 @@ button {
 }
 
 .aboutMeImage {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: 500px
 }
 
 .aboutText {
@@ -457,18 +460,19 @@ button {
 /* Fifth Section */
 .fifthSection {
   width: 100%;
-  height: auto;
+  height:100vh;
   min-height: 736px;
 }
 
 .fifthSectionContent {
   width: 80%;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 25vh;
 }
 
 .sectionTitle {
   width: 300px;
+  max-width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -480,15 +484,17 @@ button {
 .formWrapper {
   margin: auto;
   width: 300px;
+  max-width: 100%;
   text-align: center;
 }
 
 input {
-  width: 100%;
+  width: 80%;
   margin: auto;
   border: 1px solid rgba(155,155,155,0.4);
   margin-top: 10px;
-  text-indent: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-bottom: 10px;
   border-radius: 6px;
   height: 25px;
@@ -497,11 +503,12 @@ input {
 
 textarea {
   height: 180px;
-  width: 100%;
+  width: 80%;
   margin: auto;
   border: 1px solid rgba(155,155,155,0.4);
   margin-top: 10px;
-  text-indent: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-bottom: 10px;
   border-radius: 6px;
   padding-top: 8px;
@@ -610,6 +617,10 @@ a {
 
 /* Headers */
   h1 {
+  font-size: 38px;
+  }
+
+  h2 {
   font-size: 38px;
   }
 
