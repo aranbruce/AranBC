@@ -56,7 +56,7 @@ self.addEventListener('fetch', function(e) {
 
       })
       .catch(function(error) {
-        console.log("[ServiceWorker] Error Fetching and Caching New Data");
+        console.log("[ServiceWorker] Error Fetching and Caching New Data", error);
       })
     })
   )
