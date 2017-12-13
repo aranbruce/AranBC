@@ -683,7 +683,12 @@ a {
     height: 50px;
     width: 50px;
   }
+  /* Third Section */
 
+  .noPaddingBottom {
+    padding-bottom: 0;
+  }
+  
   /* Fourth Section */
   .aboutImage {
     margin-left: 0;
