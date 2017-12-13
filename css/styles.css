@@ -409,7 +409,7 @@ button {
     padding: 0;
 }
 
-#skillTitle {
+.skillTitle {
   margin-top: 0;
   margin-bottom: 16px;
 }
