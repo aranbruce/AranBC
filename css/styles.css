@@ -279,7 +279,6 @@ h5 {
 /* Second Section */
 .secondSection {
   height: auto;
-  min-height: 780px;
   width: 100%;
   margin: 0 auto;
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
@@ -418,7 +417,6 @@ button {
 /* Fourth Section */
 .fourthSection {
   height: auto;
-  min-height: 780px;
   width: 100%;
   margin: 0 auto;
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
@@ -464,7 +462,6 @@ button {
 .fifthSection {
   width: 100%;
   height: auto;
-  min-height: 780px;
 }
 
 .fifthSectionContent {
@@ -628,6 +625,12 @@ a {
   font-size: 38px;
   }
 
+  /* General Section*/
+  .sectionContent {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+  }
+
 /* Bubbles */
   #bubble1 {
     top: 30vh;
@@ -688,8 +691,13 @@ a {
   .noPaddingBottom {
     padding-bottom: 0;
   }
-  
+
   /* Fourth Section */
+  .aboutParent {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+  }
+
   .aboutImage {
     margin-left: 0;
     margin-right: 8%;
@@ -698,6 +706,11 @@ a {
   .aboutText {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .fifthSectionContent{
+    padding-top: 15vh;
+    padding-bottom: 15vh;
   }
 
 }
