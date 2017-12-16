@@ -590,8 +590,8 @@ a {
     border-radius: 50%;
     background: #4A4A4A;
     cursor: pointer;
-    width: 41px;
-    height: 41px;
+    width: 45px;
+    height: 45px;
     right: 0;
     box-shadow: 0 5px 5px 0 rgba(155,155,155,0.4);
   }
@@ -614,7 +614,7 @@ a {
   }
 
   .allBars{
-    margin: 13px 0;
+    margin: 15px 0;
   }
 
   .burgerContainerClose .bar1 {
