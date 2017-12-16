@@ -573,7 +573,8 @@ a {
     width: 100%;
     height: 100vh;
     background: white;
-    padding-top: 30px;
+    margin-top: 15px;
+    padding-top: 17px;
     position: absolute;
     left: 0;
   }
@@ -586,34 +587,46 @@ a {
 
   .burgerContainer {
     display: inline-block;
+    border-radius: 50%;
+    background: #4A4A4A;
     cursor: pointer;
+    width: 41px;
+    height: 41px;
     right: 0;
+    box-shadow: 0 5px 5px 0 rgba(155,155,155,0.4);
   }
 
   .burgerContainerClose {
     display: inline-block;
     cursor: pointer;
     right: 0;
+    box-shadow: 0 5px 5px 0 rgba(155,155,155,0.4);
   }
 
   .bar1, .bar2, .bar3 {
-      width: 35px;
-      height: 2px;
-      background-color: black;
-      margin: 9px 0;
+      width: 20px;
+      height: 1px;
+      background-color: white;
+      margin: auto;
+      margin-top: 6px;
+      margin-bottom: 6px;
       transition: 0.4s;
   }
 
+  .allBars{
+    margin: 13px 0;
+  }
+
   .burgerContainerClose .bar1 {
-      -webkit-transform: rotate(-45deg) translate(-8px, 6px) ;
-      transform: rotate(-45deg) translate(-8px, 6px) ;
+      -webkit-transform: rotate(-45deg) translate(-5px, 4px) ;
+      transform: rotate(-45deg) translate(-5px, 4px) ;
   }
 
   .burgerContainerClose .bar2 {opacity: 0;}
 
   .burgerContainerClose .bar3 {
-      -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-      transform: rotate(45deg) translate(-8px, -8px) ;
+      -webkit-transform: rotate(45deg) translate(-5px, -5px) ;
+      transform: rotate(45deg) translate(-5px, -5px) ;
   }
 
 /* Headers */
