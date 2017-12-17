@@ -379,7 +379,7 @@ button {
   -moz-appearance:    value;
   appearance:         value;
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: 600;
 	letter-spacing: -1px;
 	text-align: center;
   padding: 9px 20px;
