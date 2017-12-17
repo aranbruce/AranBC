@@ -469,6 +469,7 @@ button {
   padding-top: 25vh;
   padding-bottom: 25vh;
   width: 80%;
+  max-width: 1200px;
   margin: auto;
   justify-content: space-between;
 }
@@ -478,7 +479,7 @@ button {
   height: auto;
   flex-grow: 1;
   min-width: 250px;
-  margin: 4%;
+  margin-right: 8%;
 }
 
 .aboutMeImage {
