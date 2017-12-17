@@ -43,11 +43,52 @@ float: left;
   padding-top: 12px;
 }
 
+.rightNavNoPadding {
+  text-align: right;
+  float: right;
+  width: 20%;
+}
+
+
 .navItem {
   text-decoration: none;
   color: black;
   margin-left: 10%;
 
+}
+
+.closeButton {
+  display: inline-block;
+  border-radius: 50%;
+  background: #4A4A4A;
+  cursor: pointer;
+  width: 44px;
+  height: 45px;
+  right: 0;
+  box-shadow: 0 5px 5px 0 rgba(155,155,155,0.4);
+}
+
+.xbar1, .xbar2 {
+    width: 20px;
+    height: 1px;
+    background-color: white;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.allXBars{
+  margin: 15px 0;
+}
+
+.xbar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 4px) ;
+    transform: rotate(-45deg) translate(-5px, 4px) ;
+}
+
+.xbar2 {
+    -webkit-transform: rotate(45deg) translate(-5px, -4px) ;
+    transform: rotate(45deg) translate(-5px, -4px) ;
 }
 
 /* Headers */
@@ -590,7 +631,7 @@ a {
     border-radius: 50%;
     background: #4A4A4A;
     cursor: pointer;
-    width: 45px;
+    width: 44px;
     height: 45px;
     right: 0;
     box-shadow: 0 5px 5px 0 rgba(155,155,155,0.4);
