@@ -22,26 +22,26 @@
 
     <!-- CSS
      ================================================== -->
-     <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="/css/styles.css">
 
      <!-- script
      ================================================== -->
 
      <!-- favicons
   	================================================== -->
-  	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-  	<link rel="icon" href="favicon.png" type="image/x-icon">
+  	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+  	<link rel="icon" href="/favicon.png" type="image/x-icon">
 
     <!-- PWA Emulation for iOS
     ================================================== -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
     <meta name="apple-mobile-web-app-title" content="Aran Bruce-Caddick">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
     <!-- Manifest
    ================================================== -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
 
     <!-- theme-color
    ================================================== -->
@@ -52,7 +52,7 @@
   <nav>
     <div class="navContent">
       <div class="leftNav">
-        <a href="index.html">
+        <a href="/index.html">
           <svg width="74px" height="40px" viewBox="0 0 74 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
               <title>Logo</title>
@@ -144,12 +144,12 @@
                 </h3>
               </div>
               <div class="carouselRight">
-                <img class="carouselImage floating4" alt="" src="images/citySnappImage.png">
+                <img class="carouselImage floating4" alt="" src="./images/citySnappImage.png">
               </div>
               <div class="clear">
               </div>
             </div>
-            <button type="button" class="buttonPrimary" id="carouselButton" onclick="window.location.href='citysnapp.html'"/>
+            <button type="button" class="buttonPrimary" id="carouselButton" onclick="window.location.href='/citysnapp.html'"/>
               View Project
             </button>
              <div class="clear">
@@ -249,7 +249,7 @@
   <div class="fourthSection">
     <div class="aboutParent">
       <div class="aboutImage">
-        <img class="aboutMeImage floating4" src="images/aboutMe.png" alt="">
+        <img class="aboutMeImage floating4" src="./images/aboutMe.png" alt="">
       </div>
       <div class="aboutText">
         <h5>
@@ -316,14 +316,14 @@
 <!--scripts-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
-  <script src="scripts/jsScripts.js">
+  <script src="/scripts/jsScripts.js">
   </script>
 
   <!--service worker-->
   <script>
     if('serviceWorker' in navigator) {
       navigator.serviceWorker
-           .register('sw.js')
+           .register('/sw.js')
            .then(function(registration) {
               console.log("Service Worker Registered");
             })
