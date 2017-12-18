@@ -343,8 +343,31 @@ h5 {
 }
 
 #iPhoneImage {
-  width: 70%;
-  margin-left: 30%;
+  width: 65%;
+  margin-left: 35%;
+}
+
+.threeImages {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+}
+
+.posterImage {
+  width: 30%;
+  height: 30%;
+  padding: 10px;
+  margin: auto;
+  justify-content: space-between;
+  min-width: 150px;
+}
+
+.posterImageTopMargin {
+  margin-top: 30px;
+}
+
+.posterImageNoMargin {
+  margin-top: 0px;
 }
 
 /* Second Section */
@@ -775,6 +798,11 @@ a {
 
   #iPhoneImage {
     display: none;
+  }
+
+  .posterImage {
+    width: 60%;
+    height: 60%;
   }
 
   /* Third Section */
