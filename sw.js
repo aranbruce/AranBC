@@ -1,5 +1,6 @@
 var cacheName = 'v2';
 var cacheFiles = [
+  '/'
   'index.html',
   'citysnapp.html',
   'favicon.png',
