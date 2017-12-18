@@ -363,7 +363,7 @@ h5 {
 }
 
 .posterImageTopMargin {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .posterImageNoMargin {
@@ -800,9 +800,14 @@ a {
     display: none;
   }
 
+  .leftSection {
+    width: 100%;
+    margin-right: 0;
+  }
+
   .posterImage {
-    width: 60%;
-    height: 60%;
+    width: 90%;
+    height: 90%;
   }
 
   /* Third Section */
