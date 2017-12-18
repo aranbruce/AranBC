@@ -6,6 +6,9 @@ var cacheFiles = [
   'css/styles.css',
   'images/aboutMe.png',
   'images/citySnappImage.png',
+  'images/discover1.png',
+  'images/discover2.png',
+  'images/discover3.png',
   'scripts/jsScripts.js',
   'https://fonts.googleapis.com/css?family=Montserrat:400,600,800',
   'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'
