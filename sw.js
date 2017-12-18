@@ -2,7 +2,7 @@ var cacheName = 'v2';
 var cacheFiles = [
   'index.html',
   'citsnapp.html',
-  'images/discover1.png',
+  
   'favicon.png',
   'css/styles.css',
   'images/aboutMe.png',
