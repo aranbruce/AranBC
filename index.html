@@ -314,11 +314,13 @@
 
 
 <!--scripts-->
+<!--jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    </script>
-  <script src="scripts/jsScripts.js">
   </script>
 
+  <!--script reference-->
+  <script src="scripts/jsScripts.js">
+  </script>
   <!--service worker-->
   <script>
     if('serviceWorker' in navigator) {
@@ -330,7 +332,6 @@
             .catch(function(error) {
               console.log("Service Worker Failed to Register", error);
             })
-
     }
   </script>
 </body>
