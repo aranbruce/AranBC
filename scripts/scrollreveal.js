@@ -858,3 +858,12 @@
     window.ScrollReveal = ScrollReveal
   }
 })();
+
+window.sr =ScrollReveal();
+sr.reveal('.sectionContent', {
+  duration: 1000,
+  origin: 'bottom',
+  scale: 1,
+  distance: '5px',
+  delay: 500
+})
