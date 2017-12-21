@@ -862,6 +862,7 @@
 window.sr =ScrollReveal( {
   reset: true
 });
+
 sr.reveal('.sectionContent', {
   duration: 800,
   origin: 'bottom',
@@ -882,3 +883,11 @@ sr.reveal('.bubble', {
   delay: 800,
   duration: 1000
  }, 100);
+
+ sr.reveal('.posterImage', {
+   duration: 800,
+   origin: 'bottom',
+   scale: 1,
+   distance: '5px',
+   delay: 100
+ })
