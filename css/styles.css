@@ -710,6 +710,15 @@ a {
     padding-bottom: 15vh;
   }
 
+  .centredSectionContent {
+    width: 65%;
+    max-width: 660px;
+    margin: 0 auto;
+    padding-top: 30vh;
+    padding-bottom: 25vh;
+    text-align: center;
+  }
+
 /* Bubbles */
   #bubble1 {
     top: 30vh;
