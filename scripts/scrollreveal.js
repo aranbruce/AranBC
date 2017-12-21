@@ -860,7 +860,7 @@
 })();
 
 window.sr =ScrollReveal();
-sr.reveal('section', {
+sr.reveal('.sectionContent', {
   duration: 1000,
   origin: 'bottom',
   scale: 1,
