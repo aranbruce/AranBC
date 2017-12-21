@@ -859,7 +859,9 @@
   }
 })();
 
-window.sr =ScrollReveal();
+window.sr =ScrollReveal( {
+  reset: true
+});
 sr.reveal('.sectionContent', {
   duration: 800,
   origin: 'bottom',
