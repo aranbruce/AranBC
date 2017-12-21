@@ -861,15 +861,15 @@
 
 window.sr =ScrollReveal();
 sr.reveal('.sectionContent', {
-  duration: 1000,
+  duration: 800,
   origin: 'bottom',
   scale: 1,
   distance: '5px',
-  delay: 500
+  delay: 300
 })
 
 sr.reveal('nav', {
-  duration: 500,
+  duration: 400,
   origin: 'bottom',
   scale: 1,
   distance: '5px',
