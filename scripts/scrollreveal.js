@@ -875,3 +875,8 @@ sr.reveal('nav', {
   distance: '5px',
   delay: 500
 })
+
+sr.reveal('.bubble', {
+  delay: 800,
+  duration: 1000
+ }, 100);
