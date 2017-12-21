@@ -240,7 +240,7 @@ h5 {
 
 
 /* First Section */
-.firstSection {
+section {
   height: auto;
   min-height: 100vh;
   width: 100%;
@@ -371,10 +371,7 @@ h5 {
 }
 
 /* Second Section */
-.secondSection {
-  height: auto;
-  width: 100%;
-  margin: 0 auto;
+.grayBackground {
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
 }
 
@@ -474,12 +471,6 @@ button {
 }
 
 /* Third Section */
-.thirdSection {
-  height: auto;
-  min-height: 100vh;
-  width: 100%;
-  margin: 0 auto;
-}
 
 
 .keySkills {
@@ -509,12 +500,7 @@ button {
 }
 
 /* Fourth Section */
-.fourthSection {
-  height: auto;
-  width: 100%;
-  margin: 0 auto;
-  background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
-}
+
 
 .aboutParent {
   display: flex;
@@ -554,10 +540,7 @@ button {
 }
 
 /* Fifth Section */
-.fifthSection {
-  width: 100%;
-  height: auto;
-}
+
 
 .fifthSectionContent {
   width: 80%;
@@ -832,7 +815,7 @@ a {
     margin-right: 0;
   }
 
-  .fifthSectionContent{
+  .section {
     padding-top: 15vh;
     padding-bottom: 15vh;
   }
