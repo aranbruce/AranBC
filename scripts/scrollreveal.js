@@ -867,3 +867,11 @@ sr.reveal('section', {
   distance: '5px',
   delay: 500
 })
+
+sr.reveal('nav', {
+  duration: 500,
+  origin: 'bottom',
+  scale: 1,
+  distance: '5px',
+  delay: 500
+})
