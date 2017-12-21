@@ -20,6 +20,7 @@ var cacheFiles = [
   'images/sharing2.png',
   'images/sharing3.png',
   'scripts/jsScripts.js',
+  'scripts/ScrollReveal.js',
   'https://fonts.googleapis.com/css?family=Montserrat:400,600,800',
   'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'
 ]
