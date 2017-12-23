@@ -1,4 +1,4 @@
-var cacheName = 'v9';
+var cacheName = 'v10';
 var cacheFiles = [
   'index.html',
   'citysnapp.html',
@@ -15,6 +15,7 @@ var cacheFiles = [
   'images/planning2.png',
   'images/planning3.png',
   'images/login.png',
+  'images/logo.svg',
   'images/search.png',
   'images/sharing1.png',
   'images/sharing2.png',
