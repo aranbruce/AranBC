@@ -49,12 +49,10 @@ float: left;
   width: 20%;
 }
 
-
 .navItem {
   text-decoration: none;
   color: black;
   margin-left: 10%;
-
 }
 
 .closeButton {
@@ -246,9 +244,6 @@ section {
     to {-moz-transform: translate(0, -0px);}
 }
 
-
-/* First Section */
-
 .centredSectionContent {
   width: 65%;
   max-width: 660px;
@@ -258,8 +253,11 @@ section {
   text-align: center;
 }
 
-.bubblesParent {
+.grayBackground {
+  background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
 }
+
+/* First Section */
 
 .bubble {
   position: absolute;
@@ -370,11 +368,6 @@ section {
 
 .posterImageNoMargin {
   margin-top: 0px;
-}
-
-/* Second Section */
-.grayBackground {
-  background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
 }
 
 .carouselBox {
@@ -503,12 +496,6 @@ button {
 
 /* Fourth Section */
 
-.aboutParent {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .aboutImage {
   width: 40%;
   height: auto;
@@ -518,6 +505,11 @@ button {
 }
 
 .aboutMeImage {
+  width: 40%;
+  height: auto;
+  flex-grow: 1;
+  min-width: 250px;
+  margin-right: 8%;
   width: auto;
   max-width: 100%;
   max-height: 500px
