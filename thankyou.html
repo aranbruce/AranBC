@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+     <!--- basic page needs
+     ================================================== -->
+    <meta charset="utf-8">
+  	<title>Aran Bruce-Caddick</title>
+  	<meta name="description" content="Personal Website for Aran Bruce-Caddick">
+  	<meta name="author" content="Aran Bruce-Caddick">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- google verification
+    ================================================== -->
+
+    <!-- fonts
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
+
+    <!-- CSS
+     ================================================== -->
+     <link rel="stylesheet" href="css/styles.css">
+
+     <!-- script
+     ================================================== -->
+
+     <!-- favicons
+  	================================================== -->
+  	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  	<link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <!-- PWA Emulation for iOS
+    ================================================== -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="apple-mobile-web-app-title" content="Aran Bruce-Caddick">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Manifest
+   ================================================== -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- theme-color
+   ================================================== -->
+    <meta name="theme-color" content="#317EFB"/>
+
+</head>
+<body id="body">
+  <section>
+    <div class="sectionContent centredSectionContent">
+      <h1>
+        Thank you
+      </h1>
+      <h4>
+      We'll get back to you as soon as possible
+      </h4>
+      <button type="button" class="buttonPrimary" onclick="window.location.href='index.html'"/>
+        Go Back
+      </button>
+    </div>
+
+    </div>
+  </section>
+
+<!--scripts-->
+<!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+
+  <!--script reference-->
+  <script src="scripts/jsScripts.js">
+  </script>
+
+  <!--scroll reveal-->
+  <script src="scripts/scrollReveal.js">
+  </script>
+
+  <!--service worker-->
+  <script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker
+           .register('sw.js')
+           .then(function(registration) {
+              console.log("Service Worker Registered");
+            })
+            .catch(function(error) {
+              console.log("Service Worker Failed to Register", error);
+            })
+    }
+  </script>
+</body>
