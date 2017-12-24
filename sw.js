@@ -1,7 +1,8 @@
-var cacheName = 'v11';
+var cacheName = 'v12';
 var cacheFiles = [
   'index.html',
   'citysnapp.html',
+  'thankyou.html',
   'favicon.png',
   'css/styles.css',
   'images/aboutMe.png',
