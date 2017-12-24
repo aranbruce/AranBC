@@ -98,7 +98,8 @@ h1 {
 	font-size: 72px;
 	font-weight: 800;
 	letter-spacing: -1px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 h2 {
@@ -147,7 +148,7 @@ section {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 25vh;
+  padding-top: 20vh;
   padding-bottom: 25vh;
 }
 
