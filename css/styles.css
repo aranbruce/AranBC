@@ -606,6 +606,19 @@ a {
   color: black;
 }
 
+/* Large Desktop */
+@media screen and (min-width: 1441px) {
+
+  .centredSectionContent {
+    max-width: 800px;
+  }
+
+  h1 {
+    font-size: 90px;
+  }
+
+}
+
 
 /* Mobile and Tablet*/
 @media screen and (max-width: 768px) {
