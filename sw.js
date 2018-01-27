@@ -1,4 +1,4 @@
-var cacheName = 'v17';
+var cacheName = 'v20';
 var cacheFiles = [
   'index.html',
   'citysnapp.html',
