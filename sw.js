@@ -1,4 +1,4 @@
-var cacheName = 'v26';
+var cacheName = 'v27';
 var cacheFiles = [
   '/',
   'index.html',
@@ -23,6 +23,7 @@ var cacheFiles = [
   'images/sharing3.png',
   'images/citysnappProject.png',
   'images/comingSoon.png',
+  'manifest.json',
   'scripts/jsScripts.js',
   'scripts/scrollReveal.js',
   'https://fonts.googleapis.com/css?family=Montserrat:400,600,800',
