@@ -1,4 +1,4 @@
-var cacheName = 'v25';
+var cacheName = 'v26';
 var cacheFiles = [
   '/',
   'index.html',
@@ -7,7 +7,6 @@ var cacheFiles = [
   'favicon.png',
   'css/styles.css',
   'images/aboutMe.png',
-  'images/citySnappImage.png',
   'images/discover1.png',
   'images/discover2.png',
   'images/discover3.png',
