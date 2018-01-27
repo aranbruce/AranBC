@@ -1,5 +1,6 @@
-var cacheName = 'v21';
+var cacheName = 'v20';
 var cacheFiles = [
+  '/',
   'index.html',
   'citysnapp.html',
   'thankyou.html',
