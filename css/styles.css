@@ -368,7 +368,7 @@ section {
   transition: all .2s ease-in-out;
 }
 
-.project:hover{
+.project:hover {
   transform: scale(1.02);
   -webkit-transform: scale(1.02); /* Safari */
   transform: scale(1.02);

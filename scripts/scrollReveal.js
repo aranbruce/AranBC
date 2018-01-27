@@ -883,14 +883,6 @@ sr.reveal('.bubble', {
   duration: 1000
  }, 100);
 
- sr.reveal('.project', {
-   duration: 800,
-   origin: 'bottom',
-   scale: 1,
-   distance: '5px',
-   delay: 100
- })
-
  sr.reveal('.posterImage', {
    duration: 800,
    origin: 'bottom',
