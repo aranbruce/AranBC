@@ -110,30 +110,30 @@
       <h2>
         Projects
       </h2>
-      <div class="carousel">
-        <div class="carouselFirstContent">
-          <div class="carouselBox">
-            <div class="carouselTextAndImage">
-              <div class="carouselLeft">
-                <h5 id="carouselItemNumber">
-                  – 01
-                </h5>
-                <h3 id="carouselItemTitle">
-                  CitySnapp Native App
-                </h3>
-              </div>
-              <div class="carouselRight">
-                <img class="carouselImage floating4" alt="" src="images/citySnappImage.png">
-              </div>
-              <div class="clear">
-              </div>
-            </div>
-            <button type="button" class="buttonPrimary" id="carouselButton" onclick="window.location.href='citysnapp.html'"/>
-              View Project
-            </button>
-             <div class="clear">
-             </div>
-          </div>
+      <div class="projectsContainer">
+        <div class="project" id="projectLeft" onclick="window.location.href='citysnapp.html'">
+            <img class="projectImage" src="images/citysnappProject.png" alt="CitySnapp">
+          <h5 id="projectItemNumber">
+            – 01
+          </h5>
+          <h3 id="projectItemTitle">
+            CitySnapp Native App
+          </h3>
+          <h5>
+            View Project
+          </h5>
+        </div>
+        <div class="project">
+            <img class="projectImage" src="images/comingSoon.png" alt="Coming Soon">
+          <h5 id="projectItemNumber">
+            – 02
+          </h5>
+          <h3 id="projectItemTitle">
+            Coming Soon
+          </h3>
+          <h5>
+            View Project
+          </h5>
         </div>
       </div>
     </div>
@@ -228,7 +228,7 @@
   <section class="grayBackground" >
     <div class="sectionContent flexParent">
       <div class="aboutImage">
-        <img class="aboutMeImage floating4" src="images/aboutMe.png" alt="">
+        <img class="aboutMeImage floating4" src="images/aboutMe.png" alt="aboutMe">
       </div>
       <div class="aboutText">
         <h5>
@@ -298,7 +298,7 @@
   <!--scroll reveal-->
   <script src="scripts/scrollReveal.js">
   </script>
-
+  
   <!--service worker-->
   <script>
     if('serviceWorker' in navigator) {

@@ -354,6 +354,43 @@ section {
   margin-top: 5vh;
 }
 
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  width: 45%;
+  min-width: 250px;
+  max-width: 80%;
+  height: auto;
+  transition: all .2s ease-in-out;
+}
+
+.project:hover{
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02); /* Safari */
+  transform: scale(1.02);
+}
+
+#projectLeft {
+  margin-top: 40px;
+}
+
+.projectImage {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 10px;
+  transition: all .2s ease-in-out;
+}
+
+#projectItemTitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 .posterImage {
   width: 30%;
   height: 30%;
@@ -369,50 +406,6 @@ section {
 
 .posterImageNoMargin {
   margin-top: 0px;
-}
-
-.carouselBox {
-  width: 100%;
-  max-width: 840px;
-  background: white;
-  box-shadow: 0 5px 5px 0 rgba(155,155,155,0.4);
-  border-radius: 10px;
-  margin: 0 auto;
-}
-
-.carouselTextAndImage {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.carouselLeft {
-  flex-grow: 1;
-  width: 40%;
-  min-width: 250px;
-}
-
-#carouselItemNumber {
-  padding: 50px 0 0 30px;
-  margin: 0;
-}
-
-#carouselItemTitle {
-  padding: 0 0 0 30px;
-  margin: 0;
-}
-
-.carouselRight {
-  flex-grow: 1;
-  width: 50%;
-  margin-left: 10%;
-  min-width: 250px;
-}
-
-.carouselImage {
-  width: 50%;
-  height: auto;
-  padding: 50px 0 0 0;
 }
 
 button {
@@ -460,10 +453,6 @@ button {
 .buttonSecondary:active {
   box-shadow: 0 8px 8px 0 rgba(155,155,155,0.5);
   background: rgb(50,50,50 );
-}
-
-#carouselButton {
-  margin: 0 0 50px 30px;
 }
 
 /* Third Section */
@@ -799,6 +788,16 @@ a {
 
   .posterImageNoMargin {
     margin-top: 50px;
+  }
+
+  /* First Section */
+  .project {
+    width: 80%;
+    margin: auto;
+  }
+
+  #projectLeft {
+    padding-bottom: 80px;
   }
 
   /* Third Section */
