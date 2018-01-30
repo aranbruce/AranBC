@@ -1,7 +1,6 @@
-var cacheName = 'v3.01';
+var cacheName = 'v3.03';
 var cacheFiles = [
   '/',
-  './',
   'index.html',
   'citysnapp.html',
   'thankyou.html',
