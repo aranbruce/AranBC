@@ -35,8 +35,6 @@ self.addEventListener('install', function(e) {
     caches.open(cacheName).then(function(cache){
       console.log("[ServiceWorker] Caching cacheFiles");
       return cache.addAll(cacheFiles);
-    }).catch(function(err){
-      console.error('failed to start SW', err);
     });
   )
 })
@@ -70,6 +68,7 @@ self.addEventListener('fetch', function(e) {
           return response;
         }
         var responseClone = response.clone();
+        console.log("[ServiceWorker] Add response to cache", response, responseClone);
         caches.open(cacheName).then(function(cache) {
           cache.put(e.request, responseClone);
           return response;
