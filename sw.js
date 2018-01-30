@@ -1,4 +1,4 @@
-var cacheName = 'v3.03';
+var cacheName = 'v3.04';
 var cacheFiles = [
   '/',
   'index.html',
@@ -30,17 +30,19 @@ var cacheFiles = [
 ]
 
 self.addEventListener('install', function(e) {
-  console.log("[ServiceWorker] Installed")
+  console.log("[ServiceWorker] Installed");
   e.waitUntil(
-    caches.open(cacheName).then(function(cache){
+    caches.open(cacheName).then(function(cache) {
       console.log("[ServiceWorker] Caching cacheFiles");
       return cache.addAll(cacheFiles);
-    });
+    }).catch(function(err) {
+      console.error("[ServiceWorker] Failed to open cache on service worker registration");
+    })
   )
 })
 
 self.addEventListener('activate', function(e) {
-  console.log("[ServiceWorker] Activated")
+  console.log("[ServiceWorker] Activated");
   e.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(cacheNames.map(function(thisCacheName) {
@@ -49,6 +51,8 @@ self.addEventListener('activate', function(e) {
           return caches.delete(thisCacheName);
         }
       }))
+    }).catch(function(err) {
+      console.error("[ServiceWorker] Failed to get cache keys on service worker activation");
     })
   )
 })
