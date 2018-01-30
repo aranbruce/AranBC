@@ -7,33 +7,6 @@ const RUNTIME = 'runtime';
 
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
-  '/',
-  'index.html',
-  'citysnapp.html',
-  'thankyou.html',
-  'favicon.png',
-  'css/styles.css',
-  'images/aboutMe.png',
-  'images/discover1.png',
-  'images/discover2.png',
-  'images/discover3.png',
-  'images/goodToGo.png',
-  'images/iPhoneImage.png',
-  'images/planning1.png',
-  'images/planning2.png',
-  'images/planning3.png',
-  'images/login.png',
-  'images/logo.svg',
-  'images/search.png',
-  'images/sharing1.png',
-  'images/sharing2.png',
-  'images/sharing3.png',
-  'images/citysnappProject.png',
-  'images/comingSoon.png',
-  'scripts/jsScripts.js',
-  'scripts/scrollReveal.js',
-  'https://fonts.googleapis.com/css?family=Montserrat:400,600,800',
-  'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'
 ];
 
 // The install handler takes care of precaching the resources we always need.
