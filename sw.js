@@ -1,10 +1,11 @@
-var cacheName = 'v3.03';
+var cacheName = 'v3.04';
 var cacheFiles = [
   './',
   'index.html',
   'citysnapp.html',
   'thankyou.html',
   'favicon.png',
+  'manifest.json',
   'css/styles.css',
   'images/aboutMe.png',
   'images/discover1.png',
