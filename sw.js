@@ -35,8 +35,6 @@ self.addEventListener('install', function(e) {
     caches.open(cacheName).then(function(cache) {
       console.log("[ServiceWorker] Caching cacheFiles");
       return cache.addAll(cacheFiles);
-    }).catch(function(err) {
-      console.error("[ServiceWorker] Failed to open cache on service worker registration");
     })
   )
 })
@@ -51,8 +49,6 @@ self.addEventListener('activate', function(e) {
           return caches.delete(thisCacheName);
         }
       }))
-    }).catch(function(err) {
-      console.error("[ServiceWorker] Failed to get cache keys on service worker activation");
     })
   )
 })
@@ -66,16 +62,16 @@ self.addEventListener('fetch', function(e) {
         return response;
       }
       var requestClone = e.request.clone();
-      fetch(requestClone).then(function(response) {
-        if (!response) {
+      fetch(requestClone).then(function(fetchResponse) {
+        if (!fetchResponse) {
           console.log("[ServiceWorker] No response from fetch");
-          return response;
+          return fetchResponse;
         }
-        var responseClone = response.clone();
-        console.log("[ServiceWorker] Add response to cache", response, responseClone);
+
+        console.log("[ServiceWorker] Add response to cache", fetchResponse);
         caches.open(cacheName).then(function(cache) {
-          cache.put(e.request, responseClone);
-          return response;
+          cache.put(e.request, fetchResponse);
+          return fetchResponse;
         });
 
       })
