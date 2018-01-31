@@ -420,6 +420,10 @@ section {
   margin-bottom: 10px;
 }
 
+.projectTitle {
+  margin-top: 0;
+}
+
 .posterImage {
   width: 30%;
   height: 30%;
