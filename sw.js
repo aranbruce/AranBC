@@ -1,4 +1,4 @@
-const PRECACHE = 'precache-v1.0';
+const PRECACHE = 'precache-v1.04';
 const RUNTIME = 'runtime';
 
 // A list of local resources we always want to be cached.
@@ -27,10 +27,13 @@ const PRECACHE_URLS = [
   'images/sharing3.png',
   'images/citysnappProject.png',
   'images/comingSoon.png',
+  'fonts/Montserrat-ExtraBold.ttf',
+  'fonts/Montserrat-Regular.ttf',
+  'fonts/Montserrat-SemiBold.ttf',
   'scripts/jsScripts.js',
   'scripts/scrollReveal.js',
-  'https://fonts.googleapis.com/css?family=Montserrat:400,600,800',
-  'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'];
+  'scripts/jquery.min.js'
+];
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {
