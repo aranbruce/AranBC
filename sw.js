@@ -1,4 +1,4 @@
-var CACHE_VERSION = 1.02;
+var CACHE_VERSION = 1.03;
 var CURRENT_CACHES = {
   'read-through': 'read-through-cache-v' + CACHE_VERSION
 };
@@ -9,7 +9,7 @@ self.addEventListener('activate', function(event) {
   // there are multiple versioned caches.
   var expectedCacheNames = Object.keys(CURRENT_CACHES).map(function(key) {
     return CURRENT_CACHES[
-      './',
+      '/',
       'index.html',
       'citysnapp.html',
       'thankyou.html',
