@@ -2,3 +2,7 @@ RewriteEngine On
 # Redirect for HTTPS:
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.aranbc.com/$1 [R,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.html -f 
+RewriteRule ^(.*)$ $1.html
