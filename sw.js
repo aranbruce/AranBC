@@ -1,4 +1,4 @@
-var CACHE_VERSION = 1.05;
+var CACHE_VERSION = 1.06;
 var CURRENT_CACHES = {
   'read-through': 'read-through-cache-v' + CACHE_VERSION
 };
@@ -38,7 +38,8 @@ self.addEventListener('activate', function(event) {
       'fonts/Montserrat-SemiBold.ttf',
       'scripts/jsScripts.js',
       'scripts/scrollreveal.min.js',
-      'scripts/jquery.min.js'
+      'scripts/jquery.min.js',
+      'scripts/formSubmit.js'
     ];
   });
 
