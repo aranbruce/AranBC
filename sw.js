@@ -38,7 +38,8 @@ self.addEventListener('activate', function(event) {
       'fonts/Montserrat-SemiBold.ttf',
       'scripts/jsScripts.js',
       'scripts/scrollreveal.min.js',
-      'scripts/jquery.min.js'
+      'scripts/jquery.min.js',
+      'scripts/formSubmit.js'
     ];
   });
 
