@@ -1,12 +1,12 @@
-var form = document.getElementById('enquiryForm');
-form.onsubmit = function(event) {
-  event.preventDefault();
-  var result = [
-    form.NAME.value,
-    form.EMAIL.value,
-    form.SUBJECT.value,
-    form.MESSAGE.value,
-  ];
-  console.log(result);
-  location.href = "/thankyou";
-};
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxtiYIHGmdJqPYQMZ5LhSjsgr6kuiwscgr4_DCgbPfkclgKamUJ/exec'
+const form = document.forms['enquiryForm']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
+    if (response = true) {
+      location.href = "/thankyou";
+    }
+})
