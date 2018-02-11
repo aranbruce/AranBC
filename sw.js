@@ -1,4 +1,4 @@
-var CACHE_VERSION = 1.06;
+var CACHE_VERSION = 1.07;
 var CURRENT_CACHES = {
   'read-through': 'read-through-cache-v' + CACHE_VERSION
 };
@@ -17,6 +17,7 @@ self.addEventListener('activate', function(event) {
       'manifest.json',
       'css/styles.css',
       'images/aboutMe.png',
+      'images/aboutMePreLoad.png',
       'images/discover1.png',
       'images/discover2.png',
       'images/discover3.png',
@@ -33,13 +34,16 @@ self.addEventListener('activate', function(event) {
       'images/sharing3.png',
       'images/citysnappProject.png',
       'images/comingSoon.png',
+      'images/projectPreLoad.png',
+      'images/iPhoneImagePreLoad.png',
       'fonts/Montserrat-ExtraBold.ttf',
       'fonts/Montserrat-Regular.ttf',
       'fonts/Montserrat-SemiBold.ttf',
       'scripts/jsScripts.js',
       'scripts/scrollreveal.min.js',
       'scripts/jquery.min.js',
-      'scripts/formSubmit.js'
+      'scripts/formSubmit.js',
+      'scripts/jquery.unveil.js'
     ];
   });
 
