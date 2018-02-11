@@ -1,5 +1,5 @@
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxtiYIHGmdJqPYQMZ5LhSjsgr6kuiwscgr4_DCgbPfkclgKamUJ/exec'
-const form = document.forms['enquiryForm']
+const form = document.getElementById('enquiryForm');
 
 form.addEventListener('submit', event => {
   event.preventDefault()
