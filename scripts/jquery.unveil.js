@@ -59,3 +59,6 @@
 $(document).ready(function() {
   $("img").unveil();
 });
+
+//change threshold
+$("img").unveil(200);
