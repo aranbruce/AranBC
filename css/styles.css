@@ -190,6 +190,19 @@ section {
   padding-bottom: 25vh;
 }
 
+.centredSectionContent {
+  width: 65%;
+  max-width: 660px;
+  margin: 0 auto;
+  padding-top: 30vh;
+  padding-bottom: 25vh;
+  text-align: center;
+}
+
+.grayBackground {
+  background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
+}
+
 /* Floating */
 .floating1 {
   -webkit-animation-name: Floating1;
@@ -283,20 +296,7 @@ section {
     to {-moz-transform: translate(0, -0px);}
 }
 
-.centredSectionContent {
-  width: 65%;
-  max-width: 660px;
-  margin: 0 auto;
-  padding-top: 30vh;
-  padding-bottom: 25vh;
-  text-align: center;
-}
-
-.grayBackground {
-  background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
-}
-
-/* First Section */
+/* Bubbles */
 
 .bubble {
   position: absolute;
@@ -360,6 +360,8 @@ section {
   width: 50px;
 }
 
+/* Flex Grid */
+
 .flexParent {
   display: flex;
   flex-wrap: wrap;
@@ -379,11 +381,6 @@ section {
   width: 40%;
   margin-left: 10%;
   min-width: 250px;
-}
-
-#iPhoneImage {
-  width: 65%;
-  margin-left: 35%;
 }
 
 .threeImages {
@@ -433,6 +430,13 @@ section {
   margin-top: 0;
 }
 
+/* Images */
+
+#iPhoneImage {
+  width: 65%;
+  margin-left: 35%;
+}
+
 .posterImage {
   width: 30%;
   height: 30%;
@@ -449,6 +453,27 @@ section {
 .posterImageNoMargin {
   margin-top: 0px;
 }
+
+.aboutImage {
+  width: 40%;
+  height: auto;
+  flex-grow: 1;
+  min-width: 250px;
+  margin-right: 8%;
+}
+
+.aboutMeImage {
+  width: 40%;
+  height: auto;
+  flex-grow: 1;
+  min-width: 250px;
+  margin-right: 8%;
+  width: auto;
+  max-width: 100%;
+  max-height: 500px
+}
+
+/* Buttons */
 
 button {
 	height: 40px;
@@ -479,10 +504,6 @@ button {
   background: rgb(250,250,250 );
 }
 
-.buttonPrimary:focus {
-
-}
-
 .buttonSecondary {
   background-color: #4A4A4A;;
   color: white;
@@ -497,8 +518,13 @@ button {
   background: rgb(50,50,50 );
 }
 
-/* Third Section */
+#formButton {
+  margin: auto;
+  margin-top: 40px;
+  width: 150px;
+}
 
+/* Third Section */
 
 .keySkills {
   margin-top: 80px;
@@ -527,25 +553,6 @@ button {
 }
 
 /* Fourth Section */
-
-.aboutImage {
-  width: 40%;
-  height: auto;
-  flex-grow: 1;
-  min-width: 250px;
-  margin-right: 8%;
-}
-
-.aboutMeImage {
-  width: 40%;
-  height: auto;
-  flex-grow: 1;
-  min-width: 250px;
-  margin-right: 8%;
-  width: auto;
-  max-width: 100%;
-  max-height: 500px
-}
 
 .aboutText {
   width: 40%;
@@ -604,12 +611,6 @@ textarea {
   border-radius: 6px;
   padding-top: 8px;
   -webkit-appearance: none;
-}
-
-#formButton {
-  margin: auto;
-  margin-top: 40px;
-  width: 150px;
 }
 
 /* Footer */
@@ -756,6 +757,11 @@ a {
     text-align: center;
   }
 
+  .leftSection {
+    width: 100%;
+    margin-right: 0;
+  }
+
 /* Bubbles */
   #bubble1 {
     top: 30vh;
@@ -812,15 +818,10 @@ a {
     width: 50px;
   }
 
-  /* First Section */
+  /* Images */
 
   #iPhoneImage {
     display: none;
-  }
-
-  .leftSection {
-    width: 100%;
-    margin-right: 0;
   }
 
   .posterImage {
@@ -830,6 +831,11 @@ a {
 
   .posterImageNoMargin {
     margin-top: 50px;
+  }
+
+  .aboutImage {
+    margin-left: 0;
+    margin-right: 8%;
   }
 
   /* First Section */
@@ -852,11 +858,6 @@ a {
   .aboutParent {
     padding-top: 15vh;
     padding-bottom: 15vh;
-  }
-
-  .aboutImage {
-    margin-left: 0;
-    margin-right: 8%;
   }
 
   .aboutText {
