@@ -71,7 +71,8 @@ nav {
 }
 
 .leftNav {
-float: left;
+  float: left;
+  padding-top: 2px;
 }
 
 .rightNav {
