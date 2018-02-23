@@ -601,10 +601,12 @@ button {
 
 button:hover {
   top: -2px;
+  box-shadow: 0 10px 10px 0 rgba(155,155,155,0.5);
 }
 
 button:active {
   top: 0px;
+  box-shadow: 0 8px 8px 0 rgba(155,155,155,0.5);
 }
 
 .buttonPrimary {
@@ -612,14 +614,17 @@ button:active {
   color: white;
 }
 
-.buttonPrimary:hover {
-  box-shadow: 0 10px 10px 0 rgba(155,155,155,0.5);
-  top: -2px;
+.buttonPrimary:active {
+  background: rgba(43,43,43,0.9);
 }
 
-.buttonPrimary:active {
-  box-shadow: 0 8px 8px 0 rgba(155,155,155,0.5);
-  background: rgb(50,50,50 );
+.buttonSecondary {
+  background-color: #ffffff;
+  color: #2B2B2B;
+}
+
+.buttonSecondary:active {
+  background: rgba(43,43,43,0.05);
 }
 
 #formButton {
