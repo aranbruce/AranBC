@@ -624,7 +624,7 @@ button:active {
 }
 
 .buttonSecondary:active {
-  background: rgba(43,43,43,0.05);
+  background: rgba(43,43,43,0.02);
 }
 
 #formButton {
