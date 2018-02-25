@@ -1,4 +1,4 @@
-var CACHE_VERSION = 1.13;
+var CACHE_VERSION = 1.16;
 var CURRENT_CACHES = {
   'read-through': 'read-through-cache-v' + CACHE_VERSION
 };
@@ -42,6 +42,12 @@ self.addEventListener('activate', function(event) {
       'images/sharing1.png',
       'images/sharing2.png',
       'images/sharing3.png',
+      'images/splash-launch-640x1136.png',
+      'images/splash-launch-750x1294.png',
+      'images/splash-launch-1125x2436.png',
+      'images/splash-launch-1536x2048.png',
+      'images/splash-launch-1668x2224.png',
+      'images/splash-launch-2048x2732.png',
       'images/triangleLarge.svg',
       'images/triangleSmall.svg',
       'fonts/Montserrat-ExtraBold.ttf',
