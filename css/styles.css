@@ -416,6 +416,7 @@ input {
   border-radius: 6px;
   height: 25px;
   -webkit-appearance: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 textarea {
@@ -430,6 +431,7 @@ textarea {
   border-radius: 6px;
   padding-top: 8px;
   -webkit-appearance: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .backgroundShape {
@@ -596,7 +598,7 @@ button {
   padding: 9px 20px;
   position: relative;
   top: 0;
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.1s;
 }
 
 button:hover {
