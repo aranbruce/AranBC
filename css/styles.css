@@ -437,7 +437,6 @@ textarea {
 .backgroundShape {
   position: absolute;
   z-index: 1;
-  text-shadow: 0 10px 10px 0 rgba(155,155,155,0.7);
 }
 
 #backgroundShape1 {
