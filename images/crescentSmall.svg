@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="91px" height="60px" viewBox="0 0 91 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
     <title>crescentSmall</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <path d="M1673.51807,321.079187 C1657.29047,321.079187 1644.13541,305.114348 1644.13541,285.420722 C1644.13541,265.727095 1657.29047,249.762257 1673.51807,249.762257 C1673.51807,269.730997 1673.51807,265.727095 1673.51807,285.420722 C1673.51807,305.114348 1673.51807,306.815801 1673.51807,321.079187 Z M1673.51807,249.762257 L1679.3946,249.762257 L1679.3946,321.079187 L1673.51807,321.079187 L1673.51807,249.762257 Z" id="path-1"></path>
-        <filter x="-56.7%" y="-14.0%" width="213.4%" height="156.1%" filterUnits="objectBoundingBox" id="filter-2">
+        <path d="M1673.47071,341.120351 C1677.44382,341.112562 1679.43038,341.108667 1679.43038,341.108667 L1679.36169,269.870638 C1679.36169,269.870638 1677.39803,269.848232 1673.47071,269.803421 C1657.24312,269.803421 1644.08806,285.76826 1644.08806,305.461886 C1644.08806,325.155512 1657.24312,341.120351 1673.47071,341.120351 Z" id="path-1"></path>
+        <filter x="-56.6%" y="-14.0%" width="213.2%" height="156.1%" filterUnits="objectBoundingBox" id="filter-2">
             <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0.603921569   0 0 0 0 0.603921569   0 0 0 0 0.603921569  0 0 0 0.7 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
     </defs>
-    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1156.000000, -256.000000)">
-        <g id="Segment-1" transform="translate(-449.000000, 0.000000)">
-            <g id="crescentSmall" transform="translate(1661.765004, 285.420722) rotate(98.000000) translate(-1661.765004, -285.420722) ">
-                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                <use fill="#2B2B2B" fill-rule="evenodd" xlink:href="#path-1"></use>
+    <g id="Web-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-1156.000000, -276.000000)">
+            <g id="Segment-1" transform="translate(-449.000000, 0.000000)">
+                <g id="crescentSmall" transform="translate(1661.759219, 305.461886) rotate(98.000000) translate(-1661.759219, -305.461886) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#2B2B2B" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
             </g>
         </g>
     </g>
