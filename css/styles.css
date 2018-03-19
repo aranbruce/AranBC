@@ -588,17 +588,15 @@ button {
 	border-radius: 20px;
   border: none;
 	box-shadow: 0 5px 5px 0 rgba(155,155,155,0.4);
-  -webkit-appearance: value;
-  -moz-appearance:    value;
-  appearance:         value;
 	font-size: 18px;
 	font-weight: 600;
 	letter-spacing: -1px;
 	text-align: center;
-  padding: 9px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   position: relative;
   top: 0;
-  transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.15s;
 }
 
 button:hover {
