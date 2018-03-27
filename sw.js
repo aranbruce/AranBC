@@ -1,4 +1,4 @@
-var CACHE_VERSION = 1.19;
+var CACHE_VERSION = 1.20;
 var CURRENT_CACHES = {
   'read-through': 'read-through-cache-v' + CACHE_VERSION
 };
