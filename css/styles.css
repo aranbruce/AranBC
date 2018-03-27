@@ -198,6 +198,7 @@ section {
   padding-top: 36vh;
   padding-bottom: 25vh;
   text-align: center;
+  text-align: -webkit-center
 }
 
 .grayBackground {
@@ -403,6 +404,7 @@ footer {
   width: 300px;
   max-width: 100%;
   text-align: center;
+  text-align: -webkit-center;
 }
 
 input {
@@ -512,6 +514,7 @@ textarea {
   max-width: 100%;
   margin: auto;
   text-align: center;
+  text-align: -webkit-center;
 }
 
 #getInTouchTitle {
@@ -592,6 +595,7 @@ button {
 	font-weight: 600;
 	letter-spacing: -1px;
 	text-align: center;
+  text-align: -webkit-center;
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
@@ -757,6 +761,7 @@ a {
     padding-top: 36vh;
     padding-bottom: 25vh;
     text-align: center;
+    text-align: -webkit-center;
   }
 
   /* Sub Containers */
