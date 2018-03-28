@@ -880,3 +880,11 @@ a {
     display: none;
   }
 }
+
+/*Mobile*/
+@media screen and (max-width: 375px) {
+  .centredSectionContent {
+    width: 80%;
+  }
+
+}
