@@ -398,14 +398,14 @@ footer {
 
 .formWrapper {
   margin: auto;
-  width: 300px;
+  width: 320px;
   max-width: 100%;
   text-align: center;
   text-align: -webkit-center;
 }
 
 input {
-  width: 80%;
+  width: 90%;
   margin: auto;
   border: 1px solid rgba(155,155,155,0.4);
   margin-top: 10px;
@@ -420,7 +420,7 @@ input {
 
 textarea {
   height: 180px;
-  width: 80%;
+  width: 90%;
   margin: auto;
   border: 1px solid rgba(155,155,155,0.4);
   margin-top: 10px;
@@ -507,7 +507,7 @@ textarea {
 }
 
 .sectionTitle {
-  width: 300px;
+  width: 320px;
   max-width: 100%;
   margin: auto;
   text-align: center;
