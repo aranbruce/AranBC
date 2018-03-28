@@ -185,7 +185,7 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 20vh;
-  padding-bottom: 25vh;
+  padding-bottom: 20vh;
 }
 
 .centredSectionContent {
@@ -630,6 +630,7 @@ button:active {
 #formButton {
   margin: auto;
   margin-top: 40px;
+  margin-bottom: 40px;
   width: 150px;
 }
 
