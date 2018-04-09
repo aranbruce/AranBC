@@ -21,6 +21,7 @@
 
     <!-- Google Analytics
     ================================================== -->
+
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -76,7 +77,7 @@
       </div>
       <div class="rightNav">
         <!--Mobile Burger Menu -->
-        <div id="burger" class="burgerContainer" onclick="openCloseMenu()">
+        <div id="burger" class="burgerContainer">
           <div class="allBars">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -85,9 +86,9 @@
         </div>
         <!--Desktop Menu -->
         <div id ="menu" class="menu">
-          <a class= "navItem" href="#projects" onclick="openCloseMenu()">Projects</a>
-          <a class= "navItem" href="#keySkills" onclick="openCloseMenu()">Key Skills</a>
-          <a class= "navItem" href="#getinTouch" onclick="openCloseMenu()">Get In Touch</a>
+          <a class= "navItem" href="#projects">Projects</a>
+          <a class= "navItem" href="#keySkills">Key Skills</a>
+          <a class= "navItem" href="#getinTouch">Get In Touch</a>
         </div>
       </div>
     </div>
@@ -122,7 +123,7 @@
       </h2>
       <div class="projectsContainer">
         <div class="project" id="projectLeft" onclick="window.location.href='citysnapp'">
-            <img class="projectImage" src="images/projectPreLoad.svg" data-src="images/citysnappProject.png" alt="CitySnapp">
+            <img class="projectImage" data-src="images/citysnappProject.png" alt="CitySnapp">
           <h5>
             – 01
           </h5>
@@ -134,7 +135,7 @@
           </h5>
         </div>
         <div class="project">
-            <img class="projectImage" src="images/projectPreLoad.svg" data-src="images/comingSoon.png" alt="Coming Soon">
+            <img class="projectImage" data-src="images/comingSoon.png" alt="Coming Soon">
           <h5>
             – 02
           </h5>
@@ -238,7 +239,7 @@
   <section class="grayBackground" >
     <div class="sectionContent flexParent">
       <div class="aboutImage">
-        <img class="aboutMeImage" src="images/aboutMePreLoad.svg" data-src="images/aboutMe.png" alt="Aran Bruce-Caddick">
+        <img class="aboutMeImage" data-src="images/aboutMe.png" alt="Aran Bruce-Caddick">
       </div>
       <div class="aboutText">
         <h5>
@@ -297,38 +298,20 @@
   </footer>
 
 <!--scripts-->
-<!--jQuery-->
-  <script src="scripts/jquery.min.js">
+  <script src="dist/scripts/bundle.js">
   </script>
-
-  <!--script reference-->
-  <script src="scripts/jsScripts.js">
-  </script>
-
-  <!--lazy load reveal-->
-  <script src="scripts/jquery.unveil.js">
-  </script>
-
-  <!--scroll reveal-->
-  <script src="scripts/scrollreveal.min.js">
-  </script>
-
-  <!--form submit-->
-  <script src="scripts/formSubmit.js">
-  </script>
-
-  <!--service worker-->
-
-  <script>
-    if('serviceWorker' in navigator) {
-      navigator.serviceWorker
-           .register('sw.js')
-           .then(function(registration) {
-              console.log("Service Worker Registered");
-            })
-            .catch(function(error) {
-              console.log("Service Worker Failed to Register", error);
-            })
-    }
-  </script>
+</script>
+<!--service worker-->
+<script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+         .register('sw.js')
+         .then(function(registration) {
+            console.log("Service Worker Registered");
+          })
+          .catch(function(error) {
+            console.log("Service Worker Failed to Register", error);
+          })
+  }
+</script>
 </body>
