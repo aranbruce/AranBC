@@ -1,0 +1,30 @@
+{
+  "name": "aranbc",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "app.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open 'Google Chrome' --mode development --entry ./src/scripts/app.js --output-filename ./dist/scripts/bundle.js" ,
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aranbruce/AranBC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aranbruce/AranBC/issues"
+  },
+  "homepage": "https://github.com/aranbruce/AranBC#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "scrollreveal": "^3.4.0",
+    "vanilla-lazyload": "^8.7.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  },
+  "keywords": []
+}
