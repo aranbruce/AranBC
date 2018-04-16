@@ -4,8 +4,10 @@
   "description": "Personal Website",
   "main": "app.js",
   "scripts": {
-    "dev": "webpack-dev-server --open 'Google Chrome' --mode development --entry ./src/scripts/app.js --output-filename ./dist/scripts/bundle.js" ,
-    "build": "webpack --mode production"
+    "minify": "postcss src/css/styles.css > dist/css/styles.bundle.css",
+    "dev": "webpack-dev-server --open 'Google Chrome' --mode development --entry ./src/scripts/app.js --output-filename ./dist/scripts/bundle.js",
+    "build": "webpack --mode production && npm run minify"
+
   },
   "repository": {
     "type": "git",
@@ -19,10 +21,12 @@
   "homepage": "https://github.com/aranbruce/AranBC#readme",
   "dependencies": {
     "jquery": "^3.3.1",
+    "postcss-cli": "^5.0.0",
     "scrollreveal": "^3.4.0",
     "vanilla-lazyload": "^8.7.1"
   },
   "devDependencies": {
+    "cssnano": "^3.10.0",
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14"
   },
