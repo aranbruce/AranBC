@@ -4,10 +4,12 @@
   "description": "Personal Website",
   "main": "app.js",
   "scripts": {
+    "pug": "pug src/pages/* --out ./dist",
     "minify": "postcss src/css/styles.css > dist/css/styles.bundle.css",
-    "dev": "webpack-dev-server --open 'Google Chrome' --mode development --entry ./src/scripts/app.js --output-filename ./dist/scripts/bundle.js",
-    "build": "webpack --mode production && npm run minify"
-
+    "predev":"npm run pug && npm run minify && webpack --mode development",
+    "dev": "webpack-dev-server --mode development --open 'Google Chrome' --watch",
+    "prebuild":"npm run pug && npm run minify",
+    "build": " webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -22,13 +24,17 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "postcss-cli": "^5.0.0",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
     "scrollreveal": "^3.4.0",
     "vanilla-lazyload": "^8.7.1"
   },
   "devDependencies": {
     "cssnano": "^3.10.0",
     "webpack": "^4.5.0",
-    "webpack-cli": "^2.0.14"
+    "webpack-cli": "^2.0.14",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6"
   },
   "keywords": []
 }
