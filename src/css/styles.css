@@ -389,7 +389,7 @@ input {
   border-radius: 6px;
   height: 25px;
   -webkit-appearance: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 textarea {
@@ -404,7 +404,7 @@ textarea {
   border-radius: 6px;
   padding-top: 5px;
   -webkit-appearance: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .backgroundShape {
@@ -564,7 +564,8 @@ button {
   border: none;
 	box-shadow: 0 5px 5px 0 rgba(155,155,155,0.4);
 	font-size: 18px;
-	font-weight: 600;
+  font-weight: 700;
+  font-family: 'Nunito Sans', sans-serif;
 	text-align: center;
   text-align: -webkit-center;
   padding-left: 20px;
