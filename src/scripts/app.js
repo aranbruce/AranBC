@@ -1,3 +1,4 @@
+require('../css/styles.css');
 require('./formSubmit.js');
 require('./openCloseMenu.js');
 require('./smoothScroll.js');
