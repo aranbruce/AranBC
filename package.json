@@ -1,40 +1,36 @@
 {
   "name": "aranbc",
   "version": "1.0.0",
-  "description": "Personal Website",
-  "main": "app.js",
+  "description": "AranBC Personal Website",
+  "main": "src/scripts/app.js",
   "scripts": {
-    "pug": "pug src/pages/* --out ./dist",
-    "minify": "postcss src/css/styles.css > dist/css/styles.bundle.css",
-    "predev":"npm run pug && npm run minify && webpack --mode development",
     "dev": "webpack-dev-server --mode development --open 'Google Chrome' --watch",
-    "prebuild":"npm run pug && npm run minify",
-    "build": " webpack --mode production"
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aranbruce/AranBC.git"
+    "url": "git+https://github.com/aranbruce/AranBC.Aragit"
   },
-  "author": "",
+  "author": "Aran Bruce-Caddick",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aranbruce/AranBC/issues"
   },
-  "homepage": "https://github.com/aranbruce/AranBC#readme",
-  "dependencies": {
-    "jquery": "^3.3.1",
-    "postcss-cli": "^5.0.0",
-    "pug": "^2.0.3",
-    "pug-cli": "^1.0.0-alpha6",
-    "scrollreveal": "^3.4.0",
-    "vanilla-lazyload": "^8.7.1"
-  },
+  "homepage": "https://aranbc.com/",
   "devDependencies": {
-    "cssnano": "^3.10.0",
-    "webpack": "^4.5.0",
-    "webpack-cli": "^2.0.14",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "mini-css-extract-plugin": "^0.4.1",
     "pug": "^2.0.3",
-    "pug-cli": "^1.0.0-alpha6"
+    "pug-loader": "^2.4.0",
+    "scrollreveal": "^3.4.0",
+    "style-loader": "^0.21.0",
+    "vanilla-lazyload": "^8.11.0",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
   },
-  "keywords": []
+  "dependencies": {}
 }
