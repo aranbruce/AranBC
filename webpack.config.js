@@ -60,17 +60,17 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            filename: "test.html",
+            filename: "index.html",
             template: "./src/pages/index.pug",
             inject: false
         }),
         new HtmlWebpackPlugin({
-            filename: "test2.html",
+            filename: "citysnapp.html",
             template: "./src/pages/citysnapp.pug",
             inject: false
         }),
         new HtmlWebpackPlugin({
-            filename: "test3.html",
+            filename: "thankyou.html",
             template: "./src/pages/thankyou.pug",
             inject: false
         }),
