@@ -44,6 +44,8 @@ module.exports = {
                     "css-loader"
                 ],
             },
+             // Include file-loader to process our fonts
+
             {
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [{
@@ -56,8 +58,8 @@ module.exports = {
                 }]
             }
         ]
-      },
-
+    },
+    
     plugins: [
         new HtmlWebpackPlugin({
             filename: "index.html",
@@ -76,6 +78,6 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: "css/styles.bundle.css"
-        }),
+        })
     ]
 }

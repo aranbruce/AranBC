@@ -4,8 +4,8 @@
   "description": "AranBC Personal Website",
   "main": "src/scripts/app.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open 'Google Chrome' --watch",
-    "build": "webpack -p"
+    "dev": "webpack && webpack-dev-server --mode development --open 'Google Chrome' --watch",
+    "build": "webpack --mode production && postcss src/css/styles.css > dist/css/styles.bundle.css"
   },
   "repository": {
     "type": "git",
@@ -19,10 +19,12 @@
   "homepage": "https://aranbc.com/",
   "devDependencies": {
     "css-loader": "^1.0.0",
+    "cssnano": "^4.0.4",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "jquery": "^3.3.1",
     "mini-css-extract-plugin": "^0.4.1",
+    "postcss-cli": "^6.0.0",
     "pug": "^2.0.3",
     "pug-loader": "^2.4.0",
     "scrollreveal": "^3.4.0",

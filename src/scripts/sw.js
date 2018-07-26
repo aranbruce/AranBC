@@ -1,4 +1,4 @@
-var CACHE_VERSION = 1.26;
+var CACHE_VERSION = 1.27;
 var CURRENT_CACHES = {
   'read-through': 'read-through-cache-v' + CACHE_VERSION
 };
@@ -53,8 +53,7 @@ self.addEventListener('activate', function(event) {
       'fonts/Montserrat-ExtraBold.ttf',
       'fonts/Montserrat-Regular.ttf',
       'fonts/Montserrat-SemiBold.ttf',
-      'scripts/scripts.bunlde.js',
-      'scripts/swRegister.js'
+      'scripts/scripts.bunlde.js'
     ];
   });
 
