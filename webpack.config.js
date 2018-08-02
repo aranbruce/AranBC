@@ -4,6 +4,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const {GenerateSW} = require('workbox-webpack-plugin');
 
 module.exports = {
     entry: "./src/scripts/app.js",
@@ -13,7 +14,6 @@ module.exports = {
     },
 
     devServer: {
-        contentBase: __dirname+'/dist',
         compress: true,
         port: 8000,
         watchOptions: {
@@ -45,15 +45,29 @@ module.exports = {
                 ],
             },
              // Include file-loader to process our fonts
-
             {
+                include: __dirname + "/src/fonts/",
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [{
                     loader: "file-loader",
                     options: {
                         // useRelativePath: true,
-                        outputPath: "../dist/fonts",
-                        name: "[name].[ext]"
+                        outputPath: "/fonts",
+                        name: "[name].[ext]",
+                        
+                    }
+                }]
+            },
+            // Include file-loader to process our images
+            {
+                include: __dirname + "/src/images/",
+                test: /\.(png|jpg|gif|svg)$/,
+                use: [{
+                    loader: "file-loader",
+                    options: {
+                        // useRelativePath: true,
+                        outputPath: "/images",
+                        name: "[name].[ext]",
                     }
                 }]
             }
@@ -78,6 +92,9 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: "css/styles.bundle.css"
-        })
+        }),
+        new GenerateSW({
+            swDest: "sw.js"
+        }),
     ]
 }

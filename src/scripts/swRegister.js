@@ -1,10 +1,7 @@
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker
-        .register('sw.js')
-        .then(function(registration) {
-          console.log("Service Worker Registered");
-        })
-        .catch(function(error) {
-          console.log("Service Worker Failed to Register", error);
-        })
+// Check that service workers are registered
+if ('serviceWorker' in navigator) {
+  // Use the window load event to keep the page load performant
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
 }
