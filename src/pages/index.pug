@@ -1,11 +1,11 @@
-//- variables
-- var title = "Aran Bruce-Caddick";
-- var metaDescription = "Creating Digital Experiences. Specialising in developing and executing creative projects across digital mediums.";
-
 //- head
-include ../partials/meta.pug
+extends ../layouts/layout.pug
+block head
+    - var title = 'Aran Bruce-Caddick'
+    - var metaDescription = 'Creating Digital Experiences. Specialising in developing and executing creative projects across digital mediums.'
+
 //- body
-body#body
+block body
     include ../partials/navigation-main.pug
     include ../partials/sectionHeaderHome.pug
     include ../partials/sectionProjects.pug
@@ -15,4 +15,3 @@ body#body
     include ../partials/footer.pug
     //- scripts
     script(src='scripts/scripts.bundle.js')
-    

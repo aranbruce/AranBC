@@ -1,11 +1,11 @@
-//- variables
-- var title = "Thank You Page";
-- var metaDescription = "Thank you for signing up, we'll be in touch shortly.";
-
 //- head
-include ../partials/meta.pug
+extends ../layouts/layout.pug
+block head
+    - var title = 'Thank You Page'
+    - var metaDescription ='Thank you for signing up, we\'ll be in touch shortly.'
+
 //- body
-body#body
+block body
     include ../partials/sectionThankYou.pug
     //- scripts
     script(src='scripts/scripts.bundle.js')

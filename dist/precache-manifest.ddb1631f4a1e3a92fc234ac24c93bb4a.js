@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/images/discover1.png"
   },
   {
-    "revision": "697dd3f30928a5798b4082c7009f4e22",
+    "revision": "3ef94948f4345a2dec626626c2b5c0ed",
     "url": "thankyou.html"
   },
   {
@@ -12,15 +12,15 @@ self.__precacheManifest = [
     "url": "/images/discover2.png"
   },
   {
-    "revision": "8aee007568e823ee3f71",
+    "revision": "9285b7455e5c165a81d2",
     "url": "css/styles.bundle.css"
   },
   {
-    "revision": "de515f627364bc89738bced76181aee0",
+    "revision": "8e1b0e23a0b0ca13dc132eeea4f954f9",
     "url": "index.html"
   },
   {
-    "revision": "8aee007568e823ee3f71",
+    "revision": "9285b7455e5c165a81d2",
     "url": "scripts/scripts.bundle.js"
   },
   {
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/fonts/nunito-sans-v3-latin-regular.woff"
   },
   {
-    "revision": "5f098cec103043efc230132d38aacf2c",
+    "revision": "63bcd35d7afe2155014f0f7a1c6837f4",
     "url": "citysnapp.html"
   },
   {

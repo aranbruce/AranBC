@@ -1,11 +1,11 @@
-//- variables
-- var title = "CitySnapp";
-- var metaDescription = "CitySnapp - Native App by Aran Bruce-Caddick.";
-
 //- head
-include ../partials/meta.pug
+extends ../layouts/layout.pug
+block head
+    - var title = 'CitySnapp'
+    - var metaDescription ='CitySnapp - Native App by Aran Bruce-Caddick.'
+
 //- body
-body#body
+block body
     include ../partials/navigation-alt.pug
     include ../partials/sectionHeaderCitySnapp.pug
     include ../partials/sectionOnboarding.pug
