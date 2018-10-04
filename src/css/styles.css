@@ -381,6 +381,7 @@ footer {
 
 input {
   width: 90%;
+  height: 40px;
   margin: auto;
   border: 1px solid rgba(155,155,155,0.4);
   margin-top: 10px;
@@ -388,9 +389,9 @@ input {
   padding-right: 10px;
   margin-bottom: 10px;
   border-radius: 2px;
-  height: 25px;
   -webkit-appearance: none;
   font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
 }
 
 textarea {
@@ -406,6 +407,7 @@ textarea {
   padding-top: 5px;
   -webkit-appearance: none;
   font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
 }
 
 .backgroundShape {

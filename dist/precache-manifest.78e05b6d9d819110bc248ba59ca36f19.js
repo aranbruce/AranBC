@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/images/rectangleSmall.svg"
   },
   {
-    "revision": "9285b7455e5c165a81d2",
+    "revision": "8e2f14bd7a0069f9fb5d",
     "url": "css/styles.bundle.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "index.html"
   },
   {
-    "revision": "9285b7455e5c165a81d2",
+    "revision": "8e2f14bd7a0069f9fb5d",
     "url": "scripts/scripts.bundle.js"
   },
   {
