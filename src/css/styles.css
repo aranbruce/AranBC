@@ -213,6 +213,14 @@ footer {
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
 }
 
+.backgroundShapesParent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 /* Floating */
 .floating1 {
   animation-name: Floating1;
