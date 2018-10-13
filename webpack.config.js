@@ -6,6 +6,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const {GenerateSW} = require('workbox-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: "./src/scripts/app.js",
@@ -116,6 +117,12 @@ module.exports = {
                     destination: path.join("/images/launcher-icons"),
                 },
                 {
+                    src: path.resolve("src/images/apple-touch-icon.png"),
+                    size: 150,
+                    destination: path.join("/images"),
+                    ios: true,
+                },
+                {
                     src: path.resolve("src/images/splash-screens/splash-launch-640x1136.png"),
                     destination: path.join("/images/splash-screens"),
                     size: 1336,
@@ -164,6 +171,10 @@ module.exports = {
                     ios: "startup"
                 },
             ]
-          }),
+        }),
+        new CleanWebpackPlugin(
+            'dist', 
+            { exclude: ['.htaccess', 'favicon.png', 'sitemap.xml'], }
+        ),
     ]
 }

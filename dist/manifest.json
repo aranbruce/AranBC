@@ -41,6 +41,11 @@
       "type": "image/png"
     },
     {
+      "src": "/images/icon_150x150.d34fe0e47948bd5f617dbcf68d68ee15.png",
+      "sizes": "150x150",
+      "type": "image/png"
+    },
+    {
       "src": "/images/launcher-icons/icon_512x512.bc07a188b4b5395c160bfd19d0bb543b.png",
       "sizes": "512x512",
       "type": "image/png"
