@@ -1,4 +1,5 @@
 // VARIABLES
+var WebpackPwaManifest = require('webpack-pwa-manifest');
 
 // CONSTANTS
 const path = require("path");
@@ -96,5 +97,73 @@ module.exports = {
         new GenerateSW({
             swDest: "sw.js"
         }),
+        new WebpackPwaManifest({
+            filename: "manifest.json",
+            name: 'Aran Bruce-Caddick',
+            short_name: 'AranBC',
+            description: 'Aran Bruce-Caddick\'s Personal Website',
+            start_url: "/",
+            background_color: '#ffffff',
+            display: 'standalone',
+            ios: {
+                'apple-mobile-web-app-title': 'Aran Bruce-Caddick',
+                'apple-mobile-web-app-status-bar-style': 'white'
+            },
+            icons: [
+                {
+                    src: path.resolve("src/images/launcher-icons/launcher-icon-512x512.png"),
+                    sizes: [48, 96, 128, 192, 256, 384, 512], // multiple sizes
+                    destination: path.join("/images/launcher-icons"),
+                },
+                {
+                    src: path.resolve("src/images/splash-screens/splash-launch-640x1136.png"),
+                    destination: path.join("/images/splash-screens"),
+                    size: 1336,
+                    ios: "startup",
+                },
+                {
+                    src: path.resolve("src/images/splash-screens/splash-launch-750x1294.png"),
+                    destination: path.join("/images/splash-screens"),
+                    size: 1294,
+                    ios: "startup"
+                },
+                {
+                    src: path.resolve("src/images/splash-screens/splash-launch-1242x2148.png"),
+                    destination: path.join("/images/splash-screens"),
+                    size: 2148,
+                    ios: "startup"
+                },
+                {
+                    src: path.resolve("src/images/splash-screens/splash-launch-1125x2436.png"),
+                    destination: path.join("/images/splash-screens"),
+                    size: 2436,
+                    ios: "startup"
+                },
+                {
+                    src: path.resolve("src/images/splash-screens/splash-launch-1242x2688.png"),
+                    destination: path.join("/images/splash-screens"),
+                    size: 2688,
+                    ios: "startup"
+                },
+                {
+                    src: path.resolve("src/images/splash-screens/splash-launch-1536x2048.png"),
+                    destination: path.join("/images/splash-screens"),
+                    size: 2048,
+                    ios: "startup"
+                },
+                {
+                    src: path.resolve("src/images/splash-screens/splash-launch-1668x2224.png"),
+                    destination: path.join("/images/splash-screens"),
+                    size: 2224,
+                    ios: "startup"
+                },
+                {
+                    src: path.resolve("src/images/splash-screens/splash-launch-2048x2732.png"),
+                    destination: path.join("/images/splash-screens"),
+                    size: 2732,
+                    ios: "startup"
+                },
+            ]
+          }),
     ]
 }
