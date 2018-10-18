@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/images/planning3.png"
   },
   {
-    "revision": "e7af8c902e48eb7c3188",
+    "revision": "216bb236f2ff357bf17d",
     "url": "css/styles.bundle.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "index.html"
   },
   {
-    "revision": "e7af8c902e48eb7c3188",
+    "revision": "216bb236f2ff357bf17d",
     "url": "scripts/scripts.bundle.js"
   },
   {
