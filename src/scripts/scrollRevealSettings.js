@@ -1,5 +1,5 @@
-let $ = require('jquery');
-let ScrollReveal = require('scrollreveal');
+import $ from "jquery";
+import ScrollReveal from "scrollreveal";
 
 window.sr = ScrollReveal();
 

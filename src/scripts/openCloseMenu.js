@@ -1,4 +1,4 @@
-let $ = require('jquery');
+import $ from "jquery";
 
 window.onload = function() {
   var menu = document.getElementById("menu")

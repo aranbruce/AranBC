@@ -1,7 +1,7 @@
-require('../css/styles.css');
-require('./formSubmit.js');
-require('./openCloseMenu.js');
-require('./smoothScroll.js');
-require('./startLazyLoad.js');
-require('./scrollRevealSettings.js');
-require('./swRegister.js');
+import "../css/styles.css";
+import "./formSubmit.js";
+import "./openCloseMenu.js";
+import "./smoothScroll.js";
+import "./startLazyLoad.js";
+import "./scrollRevealSettings.js";
+import "./swRegister.js";

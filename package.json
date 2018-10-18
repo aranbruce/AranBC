@@ -4,7 +4,7 @@
   "description": "AranBC Personal Website",
   "main": "src/scripts/app.js",
   "scripts": {
-    "dev": "webpack --mode=development && webpack-dev-server --content-base dist/ --open 'Google Chrome' --watch",
+    "dev": "webpack --mode=development && webpack-dev-server --content-base src/ --open 'Google Chrome' --watch",
     "build": "webpack --mode=production && postcss src/css/styles.css > dist/css/styles.bundle.css"
   },
   "repository": {

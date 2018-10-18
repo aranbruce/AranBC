@@ -1,4 +1,4 @@
-let $ = require('jquery');
+import $ from "jquery";
 
 //Smooth Scrolling for links
 $(document).ready(function(){
