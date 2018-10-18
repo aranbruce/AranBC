@@ -1,5 +1,3 @@
-// import $ from "jquery";
-
 window.onload = function() {
   var menu = document.getElementById("menu")
   var burger = document.getElementById("burger")
