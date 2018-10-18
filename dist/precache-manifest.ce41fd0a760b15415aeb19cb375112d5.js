@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/images/planning3.png"
   },
   {
-    "revision": "6767c0c2ad8cc1383551",
+    "revision": "e9cd6c5b5c9983eb0740",
     "url": "css/styles.bundle.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "index.html"
   },
   {
-    "revision": "6767c0c2ad8cc1383551",
+    "revision": "e9cd6c5b5c9983eb0740",
     "url": "scripts/scripts.bundle.js"
   },
   {
@@ -108,16 +108,16 @@ self.__precacheManifest = [
     "url": "/images/discover1.png"
   },
   {
-    "revision": "63b22b7945f520d76fd0026511f03909",
-    "url": "/fonts/nunito-sans-v3-latin-900.woff2"
+    "revision": "1ca1c743e167b1b702801c64febda0a7",
+    "url": "/fonts/nunito-sans-v3-latin-700.svg"
   },
   {
     "revision": "8647198b65bf37f37003e6a41ef71b5c",
     "url": "/images/crescentLarge.svg"
   },
   {
-    "revision": "1ca1c743e167b1b702801c64febda0a7",
-    "url": "/fonts/nunito-sans-v3-latin-700.svg"
+    "revision": "916f1fe797c3c1b3d1b40ab05e277f81",
+    "url": "/fonts/nunito-sans-v3-latin-900.eot"
   },
   {
     "revision": "bb299a6d49113357172843868d503910",
@@ -156,6 +156,10 @@ self.__precacheManifest = [
     "url": "/fonts/nunito-sans-v3-latin-regular.eot"
   },
   {
+    "revision": "63b22b7945f520d76fd0026511f03909",
+    "url": "/fonts/nunito-sans-v3-latin-900.woff2"
+  },
+  {
     "revision": "2f943a9e7d4301d8362a566579ffaa87",
     "url": "/fonts/nunito-sans-v3-latin-900.woff"
   },
@@ -166,10 +170,6 @@ self.__precacheManifest = [
   {
     "revision": "ea695f6b69154d2a51381b9f1d76b19b",
     "url": "/fonts/nunito-sans-v3-latin-900.svg"
-  },
-  {
-    "revision": "916f1fe797c3c1b3d1b40ab05e277f81",
-    "url": "/fonts/nunito-sans-v3-latin-900.eot"
   },
   {
     "revision": "f35af95e5637f890fda83e787ce8546e",

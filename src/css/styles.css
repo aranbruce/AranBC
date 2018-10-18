@@ -61,10 +61,15 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 15px 0 15px 0;
+  padding: 10px 0;
   z-index: 100;
   width: 100%;
   background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%, rgba(255,255,255,0) 100%);
+  transition: all .2s ease-in-out;
+}
+
+.nav--scroll {
+  box-shadow: 0 10px 20px 0 rgba(152,152,152,.05)
 }
 
 .navContent {
@@ -77,14 +82,16 @@ nav {
 
 .leftNav {
   float: left;
-  padding-top: 2px;
+  padding-top: 5px;
 }
 
 .rightNav {
   text-align: right;
   float: right;
   width: 80%;
-  padding-top: 12px;
+  padding-top: 3px;
+  line-height: 46px;
+  height: 46px;
 }
 
 .rightNavNoPadding {
@@ -649,8 +656,9 @@ a {
 
 /* Nav*/
   .rightNav {
-    padding-top: 0;
+    padding-top: 3px;
     width: 20%;
+    height: 46px;
   }
 
   .menu{
