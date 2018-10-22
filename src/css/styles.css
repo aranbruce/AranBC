@@ -72,7 +72,7 @@ nav {
   box-shadow: 0 10px 20px 0 rgba(152,152,152,.05)
 }
 
-.navContent {
+.nav__content {
   max-width: 1200px;
   width: 80%;
   left: 0;
@@ -80,12 +80,12 @@ nav {
   margin: 0 auto;
 }
 
-.leftNav {
+.nav__left {
   float: left;
   padding-top: 5px;
 }
 
-.rightNav {
+.nav__right {
   text-align: right;
   float: right;
   width: 80%;
@@ -94,13 +94,13 @@ nav {
   height: 46px;
 }
 
-.navItem {
+.nav__item {
   text-decoration: none;
   color: black;
   margin-left: 10%;
 }
 
-.closeButton {
+.button__close {
   display: inline-block;
   border-radius: 50%;
   background: #2B2B2B;
@@ -184,7 +184,7 @@ section {
   margin: 0 auto;
 }
 
-.sectionContent {
+.section__content {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
@@ -192,7 +192,7 @@ section {
   padding-bottom: 20vh;
 }
 
-.centredSectionContent {
+.section__content--centred {
   width: 70%;
   max-width: 660px;
   margin: 0 auto;
@@ -202,7 +202,7 @@ section {
   text-align: -webkit-center
 }
 
-.grayBackground {
+.background--gray {
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
 }
 
@@ -214,7 +214,7 @@ footer {
   background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%);
 }
 
-.backgroundShapesParent {
+.background--shapes-parent {
   position: absolute;
   left: 0;
   right: 0;
@@ -290,7 +290,7 @@ footer {
 
 /* Flex Grid */
 
-.flexParent {
+.flex-parent {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -298,55 +298,50 @@ footer {
 
 /* Sub Containers */
 
-.leftSection {
+.section__left {
   flex-grow: 1;
   width: 40%;
   margin-right: 20px;
   min-width: 250px;
 }
 
-.rightSection {
+.section__right {
   flex-grow: 1;
   width: 40%;
   margin-left: 10%;
   min-width: 250px;
 }
 
-.threeImages {
+.section__three-images {
   display: flex;
   flex-wrap: wrap;
   margin-top: 5vh;
 }
 
-.projectsContainer {
+.section__projects-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.project {
+.section__project {
   width: 45%;
   min-width: 300px;
   height: auto;
   transition: all .2s ease-in-out;
 }
 
-.project:hover {
+.section__project:hover {
   transform: scale(1.02);
   -webkit-transform: scale(1.02); /* Safari */
   transform: scale(1.02);
 }
 
-#projectLeft {
+#project--left {
   margin-top: 40px;
 }
 
-#projectItemTitle {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.keySkills {
+.key-skills {
   margin-top: 80px;
   display: flex;
   flex-direction: row;
@@ -367,12 +362,12 @@ footer {
     padding: 0;
 }
 
-.skillTitle {
+.skill__title {
   margin-top: 0;
   margin-bottom: 16px;
 }
 
-.aboutText {
+.about-text {
   width: 40%;
   height: auto;
   flex-grow: 1;
@@ -380,7 +375,7 @@ footer {
   margin: 4%;
 }
 
-.formWrapper {
+.form__wrapper {
   margin: auto;
   width: 320px;
   max-width: 100%;
@@ -419,60 +414,60 @@ textarea {
   font-size: 16px;
 }
 
-.backgroundShape {
+.background-shape {
   position: absolute;
   z-index: 1;
 }
 
-#backgroundShape1 {
+#background-shape-1 {
   top: 17vh;
   left: 10%;
   height: auto;
   width: 12%;
 }
-#backgroundShape2 {
+#background-shape-2 {
   top: 21vh;
   left: 40%;
   height: auto;
   width: 5%;
 }
 
-#backgroundShape3 {
+#background-shape-3 {
   top: 13vh;
   right: 24%;
   height: auto;
   width: 13%;
 }
 
-#backgroundShape4 {
+#background-shape-4 {
   top: 29vh;
   right: 12%;
   height: auto;
   width: 8%;
 }
 
-#backgroundShape5 {
+#background-shape-5 {
   top: 68vh;
   left: 7%;
   height: auto;
   width: 10%;
 }
 
-#backgroundShape6 {
+#background-shape-6 {
   top: 85vh;
   left: 35%;
   height: auto;
   width: 8%;
 }
 
-#backgroundShape7 {
+#background-shape-7 {
   top: 84vh;
   right: 26%;
   height: auto;
   width: 4%;
 }
 
-#backgroundShape8 {
+#background-shape-8 {
   top: 55vh;
   right: 8%;
   height: auto;
@@ -488,12 +483,12 @@ textarea {
 
 /* Titles */
 
-.projectTitle {
+.project__title {
   margin-top: 0;
   margin-bottom: 24px;
 }
 
-.sectionTitle {
+.section__title {
   width: 320px;
   max-width: 100%;
   margin: auto;
@@ -501,26 +496,26 @@ textarea {
   text-align: -webkit-center;
 }
 
-#getInTouchTitle {
+#get-in-touch-title {
   margin-top: 0;
 }
 
-#aboutMeTitle {
+#about-me-title {
   margin-top: 0;
 }
 
-#footerTitle {
+#footer-title {
   margin: 36px 0 0 0;
 }
 
 /* Images */
 
-#iPhoneImage {
+#iPhone-image {
   width: 65%;
   margin-left: 35%;
 }
 
-.projectImage {
+.project-image {
   height: auto;
   width: auto;
   max-width: 100%;
@@ -528,7 +523,7 @@ textarea {
   transition: all .2s ease-in-out;
 }
 
-.posterImage {
+.poster-image {
   width: 30%;
   height: 30%;
   padding: 10px;
@@ -537,15 +532,15 @@ textarea {
   min-width: 150px;
 }
 
-.posterImageTopMargin {
+.poster-image--top-margin {
   margin-top: 50px;
 }
 
-.posterImageNoMargin {
+.poster-image--no-margin {
   margin-top: 0px;
 }
 
-.aboutImage {
+.about-image {
   width: 40%;
   height: auto;
   flex-grow: 1;
@@ -555,7 +550,7 @@ textarea {
   padding-right: 20px;
 }
 
-.aboutMeImage {
+.about-me-image {
   width: 40%;
   height: auto;
   flex-grow: 1;
@@ -594,29 +589,22 @@ button:active {
   box-shadow: 0 8px 8px 0 rgba(155,155,155,0.5);
 }
 
-.buttonPrimary {
+.button--primary {
   background-color: #2B2B2B;
   color: white;
 }
 
-.buttonPrimary:active {
+.button--primary:active {
   background: rgba(43,43,43,0.9);
 }
 
-.buttonSecondary {
+.button--secondary {
   background-color: #ffffff;
   color: #2B2B2B;
 }
 
-.buttonSecondary:active {
+.button--secondary:active {
   background: rgba(43,43,43,0.02);
-}
-
-#formButton {
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  width: 150px;
 }
 
 /* Links */
@@ -629,7 +617,7 @@ a {
 /* Large Desktop */
 @media screen and (min-width: 1441px) {
   /* Sections */
-  .centredSectionContent {
+  .section__content--centred {
     max-width: 800px;
   }
   /* Headers */
@@ -649,7 +637,7 @@ a {
   }
 
 /* Nav*/
-  .rightNav {
+  .nav__right {
     padding-top: 3px;
     width: 20%;
     height: 46px;
@@ -659,7 +647,7 @@ a {
       display: none;
     }
 
-  .menu.menu.show{
+  .show{
     display: flex;
     flex-flow: column;
     text-align: left;
@@ -672,13 +660,13 @@ a {
     left: 0;
   }
 
-  .navItem {
+  .nav__item {
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 18px;
   }
 
-  .burgerContainer {
+  .burger-container {
     display: inline-block;
     border-radius: 50%;
     background: #2B2B2B;
@@ -689,7 +677,7 @@ a {
     box-shadow: 0 5px 5px 0 rgba(155,155,155,0.4);
   }
 
-  .burgerContainerClose {
+  .burger-container--close {
     display: inline-block;
     cursor: pointer;
     right: 0;
@@ -710,14 +698,14 @@ a {
     margin: 15px 0;
   }
 
-  .burgerContainerClose .bar1 {
+  .burger-container--close .bar1 {
       -webkit-transform: rotate(-45deg) translate(-5px, 5px) ;
       transform: rotate(-45deg) translate(-5px, 5px) ;
   }
 
-  .burgerContainerClose .bar2 {opacity: 0;}
+  .burger-container--close .bar2 {opacity: 0;}
 
-  .burgerContainerClose .bar3 {
+  .burger-container--close .bar3 {
       -webkit-transform: rotate(45deg) translate(-5px, -5px) ;
       transform: rotate(45deg) translate(-5px, -5px) ;
   }
@@ -740,12 +728,12 @@ a {
   }
 
   /* Sections*/
-  .sectionContent {
+  .section__content {
     padding-top: 15vh;
     padding-bottom: 15vh;
   }
 
-  .centredSectionContent {
+  .section__content--centred {
     width: 65%;
     max-width: 660px;
     margin: 0 auto;
@@ -756,17 +744,17 @@ a {
   }
 
   /* Sub Containers */
-  .leftSection {
+  .section__left {
     width: 100%;
     margin-right: 0;
   }
 
-  .project {
+  .section__project {
     min-width: 100%;
     margin: auto;
   }
 
-  #projectLeft {
+  #project--left {
     padding-bottom: 80px;
     margin-right: 0px;
   }
@@ -775,65 +763,60 @@ a {
     padding-bottom: 0;
   }
 
-  .aboutParent {
-    padding-top: 15vh;
-    padding-bottom: 15vh;
-  }
-
-  .aboutText {
+  .about-text {
     margin-left: 0;
     margin-right: 0;
   }
 
-  #backgroundShape1 {
+  #background-shape-1 {
     top: 30vh;
     left: 3%;
     height: 80px;
     width: 80px;
   }
-  #backgroundShape2 {
+  #background-shape-2 {
     top: 17vh;
     left: 22%;
     height: 40px;
     width: 40px;
   }
 
-  #backgroundShape3 {
+  #background-shape-3 {
     top: 16vh;
     right: 20%;
     height: 80px;
     width: 80px;
   }
 
-  #backgroundShape4 {
+  #background-shape-4 {
     top: 30vh;
     right: 5%;
     height: 40px;
     width: 40px;
   }
 
-  #backgroundShape5 {
+  #background-shape-5 {
     top: 70vh;
     left: 3%;
     height: 70px;
     width: 70px;
   }
 
-  #backgroundShape6 {
+  #background-shape-6 {
     top: 78vh;
     left: 30%;
     height: 65px;
     width: 65px;
   }
 
-  #backgroundShape7 {
+  #background-shape-7 {
     top: 90vh;
     right: 28%;
     height: 30px;
     width: 30px;
   }
 
-  #backgroundShape8 {
+  #background-shape-8 {
     top: 70vh;
     right: 4%;
     height: 90px;
@@ -842,20 +825,20 @@ a {
 
   /* Images */
 
-  #iPhoneImage {
+  #iPhone-image {
     display: none;
   }
 
-  .posterImage {
+  .poster-image {
     width: 90%;
     height: 90%;
   }
 
-  .posterImageNoMargin {
+  .poster-image--no-margin {
     margin-top: 50px;
   }
 
-  .aboutImage {
+  .about-image {
     margin: auto;
   }
 
@@ -870,7 +853,7 @@ a {
 
 /*Mobile*/
 @media screen and (max-width: 375px) {
-  .centredSectionContent {
+  .section__content--centred {
     width: 80%;
   }
 

@@ -3,7 +3,7 @@ import ScrollReveal from "scrollreveal";
 
 window.sr = ScrollReveal();
 
-sr.reveal('.sectionContent', {
+sr.reveal('.section__content', {
   duration: 400,
   origin: 'bottom',
   scale: 1,
@@ -19,7 +19,7 @@ sr.reveal('nav', {
   delay: 0
 })
 
-sr.reveal('.backgroundShape', {
+sr.reveal('.background-shape', {
   delay: 400,
   duration: 1000
  }, 100);

@@ -3,11 +3,11 @@ window.onload = function() {
   var burger = document.getElementById("burger")
 
   if(burger) {
-    var navItems = document.getElementsByClassName("navItem")
+    var navItems = document.getElementsByClassName("nav__item")
 
     function openCloseMenu() {
       menu.classList.toggle("show");
-      burger.classList.toggle("burgerContainerClose");
+      burger.classList.toggle("burger-container--close");
       
     }
 
