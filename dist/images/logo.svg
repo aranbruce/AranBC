@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="40px" viewBox="0 0 95 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo" fill="#2B2B2B">
+            <g>
+                <polygon id="Triangle" points="20 0 40 40 0 40"></polygon>
+                <path d="M60.0933582,20.0776149 C65.1147167,20.6936185 69,24.9011618 69,30 C69,35.0988382 65.1147167,39.3063815 60.0933582,39.9223851 L60.0933582,40 L41,40 L41,0 L60.0933582,0 L60.0933582,0.0776148624 C65.1147167,0.693618452 69,4.90116181 69,10 C69,15.0988382 65.1147167,19.3063815 60.0933582,19.9223851 L60.0933582,20.0776149 Z" id="Combined-Shape"></path>
+                <path d="M90.047619,40 C77.6666667,40 69,32.5 69,20 C69,7.5 77.6666667,0 90.047619,0 C90.047619,11.2 90.047619,8.954305 90.047619,20 C90.047619,31.045695 90.047619,32 90.047619,40 Z M90.047619,0 L95,0 L95,40 L90.047619,40 L90.047619,0 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

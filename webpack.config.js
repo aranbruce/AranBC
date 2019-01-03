@@ -100,13 +100,16 @@ module.exports = {
             swDest: "sw.js"
         }),
         new WebpackPwaManifest({
-            filename: "manifest.json",
+            filename: 'manifest.json',
             name: 'Aran Bruce-Caddick',
             short_name: 'AranBC',
             description: 'Aran Bruce-Caddick\'s Personal Website',
-            start_url: "/",
+            start_url: '/',
             background_color: '#ffffff',
             display: 'standalone',
+            inject: true,
+            theme_color: '#ffffff',
+            orientation: 'portrait',
             ios: {
                 'apple-mobile-web-app-title': 'Aran Bruce-Caddick',
                 'apple-mobile-web-app-status-bar-style': 'white'
