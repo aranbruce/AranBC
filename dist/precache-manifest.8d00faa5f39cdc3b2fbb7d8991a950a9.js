@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "ac31e726f2715d335d0c",
+    "revision": "79bb770d646e8cd7b0d9",
     "url": "css/styles.bundle.css"
   },
   {
-    "revision": "ac31e726f2715d335d0c",
+    "revision": "79bb770d646e8cd7b0d9",
     "url": "scripts/scripts.bundle.js"
   },
   {
@@ -108,10 +108,6 @@ self.__precacheManifest = [
     "url": "/images/aboutMe.png"
   },
   {
-    "revision": "3bdedf81513ea192b5dbc85d9cd32213",
-    "url": "/fonts/nunito-sans-v3-latin-regular.eot"
-  },
-  {
     "revision": "d62e65602a0e8702cefd1897d1d14fa4",
     "url": "/fonts/nunito-sans-v3-latin-regular.woff2"
   },
@@ -120,16 +116,24 @@ self.__precacheManifest = [
     "url": "/fonts/nunito-sans-v3-latin-regular.woff"
   },
   {
+    "revision": "3bdedf81513ea192b5dbc85d9cd32213",
+    "url": "/fonts/nunito-sans-v3-latin-regular.eot"
+  },
+  {
     "revision": "15488f80439b6d7da93dfc0d5f15062a",
     "url": "/fonts/nunito-sans-v3-latin-700.eot"
+  },
+  {
+    "revision": "5b2af1710ea19711951b2114c8e8db01",
+    "url": "/fonts/nunito-sans-v3-latin-700.woff2"
   },
   {
     "revision": "ee7383a8a0d74f3f4900bd01202534c2",
     "url": "/fonts/nunito-sans-v3-latin-700.woff"
   },
   {
-    "revision": "5b2af1710ea19711951b2114c8e8db01",
-    "url": "/fonts/nunito-sans-v3-latin-700.woff2"
+    "revision": "916f1fe797c3c1b3d1b40ab05e277f81",
+    "url": "/fonts/nunito-sans-v3-latin-900.eot"
   },
   {
     "revision": "63b22b7945f520d76fd0026511f03909",
@@ -140,32 +144,28 @@ self.__precacheManifest = [
     "url": "/fonts/nunito-sans-v3-latin-900.woff"
   },
   {
-    "revision": "916f1fe797c3c1b3d1b40ab05e277f81",
-    "url": "/fonts/nunito-sans-v3-latin-900.eot"
+    "revision": "f35af95e5637f890fda83e787ce8546e",
+    "url": "/fonts/nunito-sans-v3-latin-700.ttf"
   },
   {
     "revision": "57cf9a08cbf912f02bf6d32187bbc65e",
     "url": "/fonts/nunito-sans-v3-latin-regular.ttf"
   },
   {
-    "revision": "f35af95e5637f890fda83e787ce8546e",
-    "url": "/fonts/nunito-sans-v3-latin-700.ttf"
-  },
-  {
     "revision": "d3b5f2e98992fbee3e3870005ade8db3",
     "url": "/fonts/nunito-sans-v3-latin-900.ttf"
   },
   {
-    "revision": "ea695f6b69154d2a51381b9f1d76b19b",
-    "url": "/fonts/nunito-sans-v3-latin-900.svg"
+    "revision": "1ca1c743e167b1b702801c64febda0a7",
+    "url": "/fonts/nunito-sans-v3-latin-700.svg"
   },
   {
     "revision": "59c1b87f1eac29e3e490fbb39f368e0f",
     "url": "/fonts/nunito-sans-v3-latin-regular.svg"
   },
   {
-    "revision": "1ca1c743e167b1b702801c64febda0a7",
-    "url": "/fonts/nunito-sans-v3-latin-700.svg"
+    "revision": "ea695f6b69154d2a51381b9f1d76b19b",
+    "url": "/fonts/nunito-sans-v3-latin-900.svg"
   },
   {
     "revision": "331dec032f0339d3c29a15ca5a0b4c94",
