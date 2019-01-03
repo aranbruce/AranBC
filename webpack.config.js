@@ -9,6 +9,7 @@ const {GenerateSW} = require('workbox-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
+    mode: "production",
     entry: "./src/scripts/app.js",
     output: {
         path: __dirname + "/dist",
