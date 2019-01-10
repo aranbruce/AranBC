@@ -3,49 +3,78 @@ var WebpackPwaManifest = require('webpack-pwa-manifest');
 
 // CONSTANTS
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const {GenerateSW} = require('workbox-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const SitemapPlugin = require('sitemap-webpack-plugin').default;
+
+// paths to be cleaned
+let pathsToClean = [
+    'dist'
+]
+
+// the clean options to use
+let cleanOptions = {
+    root: path.resolve(__dirname),
+    exclude: ['.htaccess'],
+    verbose: true,
+    dry: false
+}
+
+// sitemap paths
+const sitemapPaths = [
+    {
+        path: '/',
+        priority: '1',
+        changeFreq: 'monthly'
+    },
+    {
+        path: '/citysnapp',
+        priority: '0.9',
+        changeFreq: 'monthly'
+    },
+    {
+        path: '/thankyou',
+        priority: '0.3',
+        changeFreq: 'monthly'
+    },
+]
 
 module.exports = {
-    mode: "production",
-    entry: "./src/scripts/app.js",
-    output: {
-        path: __dirname + "/dist",
-        filename: "scripts/scripts.bundle.js"
+    entry: {
+        main: "./src/scripts/index.js"
     },
-
-    devServer: {
-        compress: true,
-        port: 8000,
-        watchOptions: {
-          poll: true,
-          ignored: /node_modules/
-        }
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: "scripts/main.js"
     },
 
     module: {
         rules: [
+            // Use babel on javascript files
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                  loader: "babel-loader"
+                }
+              },
             // Include pug-loader to process the pug files
             {
                 test: /\.pug$/,
                 use: 'pug-loader'
             },
-            // Include MiniCssExtractPluginloaders to process our css files
+            // Include style-loader, MiniCssExtractPluginloaders, and css-loader to process our css files
             {
-                test: /\.css$/,
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                        // you can specify a publicPath here
-                        // by default it use publicPath in webpackOptions.output
-                        output: __dirname + "/dist"
-                        }
-                    },
-                    "css-loader"
-                ],
+                test: /\.(css|scss|sass)$/,
+                use:  [
+                    'style-loader',
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'postcss-loader',
+                    'sass-loader'
+                ]
             },
              // Include file-loader to process our fonts
             {
@@ -54,8 +83,8 @@ module.exports = {
                 use: [{
                     loader: "file-loader",
                     options: {
-                        // useRelativePath: true,
-                        outputPath: "/fonts",
+                        useRelativePath: true,
+                        outputPath: "fonts/",
                         name: "[name].[ext]",
                         
                     }
@@ -68,8 +97,8 @@ module.exports = {
                 use: [{
                     loader: "file-loader",
                     options: {
-                        // useRelativePath: true,
-                        outputPath: "/images",
+                        useRelativePath: true,
+                        outputPath: "images/",
                         name: "[name].[ext]",
                     }
                 }]
@@ -78,24 +107,45 @@ module.exports = {
     },
     
     plugins: [
+        new MiniCssExtractPlugin({
+            filename: "main.css"
+        }),
         new HtmlWebpackPlugin({
+            title: "AranBC Website",
+            minify: {
+                collapseWhiteSpace: true
+            },
             filename: "index.html",
             template: "./src/pages/index.pug",
-            inject: false
+            favicon: "./src/images/favicon.png"
         }),
         new HtmlWebpackPlugin({
+            minify: {
+                collapseWhiteSpace: true
+            },
             filename: "citysnapp.html",
             template: "./src/pages/citysnapp.pug",
-            inject: false
+            favicon: "./src/images/favicon.png"
         }),
         new HtmlWebpackPlugin({
+            minify: {
+                collapseWhiteSpace: true
+            },
             filename: "thankyou.html",
             template: "./src/pages/thankyou.pug",
-            inject: false
+            favicon: "./src/images/favicon.png"
         }),
-        new MiniCssExtractPlugin({
-            filename: "css/styles.bundle.css"
-        }),
+        new CleanWebpackPlugin(pathsToClean, cleanOptions),
+        new SitemapPlugin(
+            'https://www.aranbc.com',
+            sitemapPaths,
+            {
+                filename: 'sitemap.xml',
+                lastMod: true,
+                changeFreq: 'monthly',
+                skipGzip: true
+            }
+        ),
         new GenerateSW({
             swDest: "sw.js"
         }),
@@ -175,10 +225,6 @@ module.exports = {
                     ios: "startup"
                 },
             ]
-        }),
-        new CleanWebpackPlugin(
-            'dist', 
-            { exclude: ['.htaccess', 'favicon.png', 'sitemap.xml'], }
-        ),
+        })
     ]
 }
