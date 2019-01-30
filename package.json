@@ -34,7 +34,6 @@
     "pug": "^2.0.3",
     "pug-loader": "^2.4.0",
     "sass-loader": "^7.1.0",
-    "scrollreveal": "^4.0.5",
     "sitemap-webpack-plugin": "^0.6.0",
     "style-loader": "^0.23.1",
     "vanilla-lazyload": "^8.17.0",
