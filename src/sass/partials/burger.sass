@@ -1,11 +1,11 @@
-.burger-container, .burger-container--close
+.burger-container
     display: flex
     border-radius: 50%
-    background: white
+    background: $white
     cursor: pointer
-    width: 45px
-    height: 45px
-    box-shadow: 0 5px 5px 0 rgba(155, 155, 155, 0.4)
+    width: 2.8125rem
+    height: 2.8125rem
+    box-shadow: 0 5px 5px 0 rgba(43, 43, 43, 0.2)
     z-index: 2
     @media screen and (min-width: $tablet)
         display: none
@@ -22,7 +22,15 @@
         width: 100%
         align-self: center
 
+.burger-container--scroll
+    background: linear-gradient(319.33deg, $purple 0%, #2CCDFF 100%)
+        
+    .bar1, .bar2, .bar3
+        background-color: $white
+
 .burger-container--close
+    @extend .burger-container
+    @extend .burger-container--scroll
     .bar1
         -webkit-transform: rotate(-45deg) translate(-5px, 5px)
         transform: rotate(-45deg) translate(-5px, 5px)
@@ -31,50 +39,3 @@
     .bar3
         -webkit-transform: rotate(45deg) translate(-5px, -5px)
         transform: rotate(45deg) translate(-5px, -5px)
-
-.nav--scroll
-    .burger-container
-        background: linear-gradient(319.33deg, #8067FF 0%, #2CCDFF 100%)
-        
-        .bar1, .bar2, .bar3
-            background-color: white
-    
-    .burger-container--close
-        background: white
-        
-        .bar1, .bar2, .bar3
-            background-color: #5798FF
-
-.button__close
-    display: inline-block
-    border-radius: 50%
-    background: #2B2B2B
-    cursor: pointer
-    width: 45px
-    height: 45px
-    right: 0
-    box-shadow: 0 5px 5px 0 rgba(155, 155, 155, 0.4)
-    transition: 0.4s
-
-    .xbar1, .xbar2, .xbar3
-        width: 21px
-        height: 1px
-        background-color: white
-        margin: auto
-        margin-top: 6px
-        margin-bottom: 6px
-        transition: 0.4s
-
-    .allXBars
-        margin: 15px 0
-
-    .xbar1
-        -webkit-transform: rotate(-45deg) translate(-5px, 5px)
-        transform: rotate(-45deg) translate(-5px, 5px)
-
-    .xbar2
-    opacity: 0
-
-    .xbar3
-    -webkit-transform: rotate(45deg) translate(-5px, -5px)
-    transform: rotate(45deg) translate(-5px, -5px)

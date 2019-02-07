@@ -1,6 +1,51 @@
 footer
   width: 100%
-  min-height: 50px
   height: auto
   margin: auto
-  background: linear-gradient(180deg, #FBFBFB 0%, #F7F7F7 89.72%, #F0F0F0 100%)
+  background-color: $grey
+  
+  .footer__content
+    @extend .section__content
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+    .footer__left
+      width: 100%
+      margin-bottom: 4rem
+      @media screen and (min-width: $tablet)
+        width: 18rem
+        margin-bottom: 0
+      .logo--black
+        width: 6rem
+      .social
+        a:first-child
+            margin-right: 0.5rem
+        img
+          width: 2rem
+          
+    .footer__right
+      display: flex
+      flex-wrap: wrap
+      
+      .footer-subsection
+        width: 100%
+        &:first-child
+          margin-bottom: 2rem
+        @media screen and (min-width: $mobile-large)
+          width: auto
+          &:first-child
+            margin-right: 3rem
+
+
+      .footer-subsection-title
+        font-weight: 600
+        
+      .footer-subsection-content
+        ul
+          padding-left: 0
+          margin: 0 auto
+          li
+            margin-bottom: 0.5rem
+            &:last-child
+              margin-bottom: 0

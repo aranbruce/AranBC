@@ -1,0 +1,23 @@
+form
+    width: 20rem
+    max-width: 100%
+    margin: 0 auto
+    .form__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        input
+            font-family: $font-family, $backup-font
+            width: 90%
+            height: 3.125rem
+            border: 0.0625rem solid $light-grey
+            padding: 0 1rem
+            font-size: 1rem
+            border-radius: 0.3125rem
+            margin-bottom: 1rem
+            &:focus
+                outline: $blue solid 0.125rem
+        textarea
+            @extend input
+            height: 12.5rem
+            padding-top: 0.75rem

@@ -1,0 +1,19 @@
+nav
+    .nav__content
+        .nav__left
+            a(href='/')
+                img(src=require("../../images/logo.svg"), alt="ABC logo")
+        .nav__right
+            //- Mobile Burger Menu
+            .burger-container#burger
+                .allBars
+                    .bar1
+                    .bar2
+                    .bar3
+            //- Desktop Menu
+            .menu#menu
+                a.nav__item(href='#work') Work
+                a.nav__item(href='#skills') Key Skills
+                a.nav__item(href='#about-me') About Me 
+                a.nav__item(href='#form')
+                    button.button--secondary Get In Touch
