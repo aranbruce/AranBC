@@ -1,0 +1,47 @@
+// Margins
+.extra-margin-top
+    margin-top: 1rem
+
+.extra-margin-bottom
+    margin-bottom: 1rem
+
+.no-margin-top
+    margin-top: 0
+
+.no-margin-bottom
+    margin-bottom: 0
+
+// Padding
+.extra-padding-top
+    padding-top: 1rem
+
+.extra-padding-bottom
+    padding-bottom: 1rem
+
+.no-padding-top
+    padding-top: 0
+
+.no-padding-bottom
+    padding-bottom: 0
+
+// Layout
+.flex
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: center
+    @media screen and (min-width: $tablet)
+        flex-wrap: nowrap
+
+.flex--reverse
+    @extend .flex
+    flex-wrap: wrap-reverse
+
+.flex--wrap
+    @extend .flex
+    flex-wrap: wrap
+
+// Centre Text
+.centre-text
+    text-align: center
+

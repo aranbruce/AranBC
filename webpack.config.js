@@ -29,11 +29,11 @@ const sitemapPaths = [
         priority: '1',
         changeFreq: 'monthly'
     },
-    {
-        path: '/citysnapp',
-        priority: '0.9',
-        changeFreq: 'monthly'
-    },
+    // {
+    //     path: '/citysnapp',
+    //     priority: '0.9',
+    //     changeFreq: 'monthly'
+    // },
     {
         path: '/thankyou',
         priority: '0.3',
@@ -119,14 +119,14 @@ module.exports = {
             template: "./src/pages/index.pug",
             favicon: "./src/images/favicon.png"
         }),
-        new HtmlWebpackPlugin({
-            minify: {
-                collapseWhiteSpace: true
-            },
-            filename: "citysnapp.html",
-            template: "./src/pages/citysnapp.pug",
-            favicon: "./src/images/favicon.png"
-        }),
+        // new HtmlWebpackPlugin({
+        //     minify: {
+        //         collapseWhiteSpace: true
+        //     },
+        //     filename: "citysnapp.html",
+        //     template: "./src/pages/citysnapp.pug",
+        //     favicon: "./src/images/favicon.png"
+        // }),
         new HtmlWebpackPlugin({
             minify: {
                 collapseWhiteSpace: true
@@ -168,59 +168,59 @@ module.exports = {
                 {
                     src: path.resolve("src/images/launcher-icons/launcher-icon-512x512.png"),
                     sizes: [48, 96, 128, 192, 256, 384, 512], // multiple sizes
-                    destination: path.join("/images/launcher-icons"),
+                    destination: path.join("images/launcher-icons/"),
                 },
                 {
                     src: path.resolve("src/images/apple-touch-icon.png"),
                     size: 150,
-                    destination: path.join("/images"),
+                    destination: path.join("images/"),
                     ios: true,
                 },
                 {
                     src: path.resolve("src/images/splash-screens/splash-launch-640x1136.png"),
-                    destination: path.join("/images/splash-screens"),
+                    destination: path.join("images/splash-screens/"),
                     size: 1336,
                     ios: "startup",
                 },
                 {
                     src: path.resolve("src/images/splash-screens/splash-launch-750x1294.png"),
-                    destination: path.join("/images/splash-screens"),
+                    destination: path.join("images/splash-screens/"),
                     size: 1294,
                     ios: "startup"
                 },
                 {
                     src: path.resolve("src/images/splash-screens/splash-launch-1242x2148.png"),
-                    destination: path.join("/images/splash-screens"),
+                    destination: path.join("images/splash-screens/"),
                     size: 2148,
                     ios: "startup"
                 },
                 {
                     src: path.resolve("src/images/splash-screens/splash-launch-1125x2436.png"),
-                    destination: path.join("/images/splash-screens"),
+                    destination: path.join("images/splash-screens/"),
                     size: 2436,
                     ios: "startup"
                 },
                 {
                     src: path.resolve("src/images/splash-screens/splash-launch-1242x2688.png"),
-                    destination: path.join("/images/splash-screens"),
+                    destination: path.join("images/splash-screens/"),
                     size: 2688,
                     ios: "startup"
                 },
                 {
                     src: path.resolve("src/images/splash-screens/splash-launch-1536x2048.png"),
-                    destination: path.join("/images/splash-screens"),
+                    destination: path.join("images/splash-screens/"),
                     size: 2048,
                     ios: "startup"
                 },
                 {
                     src: path.resolve("src/images/splash-screens/splash-launch-1668x2224.png"),
-                    destination: path.join("/images/splash-screens"),
+                    destination: path.join("images/splash-screens/"),
                     size: 2224,
                     ios: "startup"
                 },
                 {
                     src: path.resolve("src/images/splash-screens/splash-launch-2048x2732.png"),
-                    destination: path.join("/images/splash-screens"),
+                    destination: path.join("images/splash-screens/"),
                     size: 2732,
                     ios: "startup"
                 },

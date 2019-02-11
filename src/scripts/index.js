@@ -4,5 +4,4 @@ import "../scripts/navScroll.js";
 import "../scripts/openCloseMenu.js";
 import "../scripts/smoothScroll.js";
 import "../scripts/startLazyLoad.js";
-import "../scripts/scrollRevealSettings.js";
 import "../scripts/swRegister.js";

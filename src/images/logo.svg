@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="95px" height="40px" viewBox="0 0 95 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+<svg width="82px" height="50px" viewBox="0 0 82 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
     <title>Logo</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Logo" fill="#2B2B2B">
-            <g>
-                <polygon id="Triangle" points="20 0 40 40 0 40"></polygon>
-                <path d="M60.0933582,20.0776149 C65.1147167,20.6936185 69,24.9011618 69,30 C69,35.0988382 65.1147167,39.3063815 60.0933582,39.9223851 L60.0933582,40 L41,40 L41,0 L60.0933582,0 L60.0933582,0.0776148624 C65.1147167,0.693618452 69,4.90116181 69,10 C69,15.0988382 65.1147167,19.3063815 60.0933582,19.9223851 L60.0933582,20.0776149 Z" id="Combined-Shape"></path>
-                <path d="M90.047619,40 C77.6666667,40 69,32.5 69,20 C69,7.5 77.6666667,0 90.047619,0 C90.047619,11.2 90.047619,8.954305 90.047619,20 C90.047619,31.045695 90.047619,32 90.047619,40 Z M90.047619,0 L95,0 L95,40 L90.047619,40 L90.047619,0 Z" id="Combined-Shape"></path>
-            </g>
+    <defs>
+        <linearGradient x1="94.7915565%" y1="92.0604247%" x2="7.08513136%" y2="24.4579454%" id="linearGradient-1">
+            <stop stop-color="#8067FF" offset="0%"></stop>
+            <stop stop-color="#2CCDFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M73.5168039,25.4338235 L82,39.9437731 L64.1224588,39.9437731 C63.9489261,39.9531329 63.7741589,39.9578735 63.5982792,39.9578735 C58.3337104,39.9578735 54.0659341,35.7104267 54.0659341,30.4709356 C54.0659341,28.6203222 54.5983546,26.8934699 55.5190645,25.4338235 L55.5112044,25.4338235 L64.6374788,10.0391874 L73.5413247,25.4338235 L73.5168039,25.4338235 Z M40.8247736,39.9475443 L30.7109446,39.9475443 L30.7109446,19.5912178 C30.4056926,16.3109811 32.0173472,12.9751825 35.0991422,11.1959073 C39.2946672,8.77361987 44.6261651,10.1534373 47.0073761,14.2778158 C48.5731122,16.9897502 48.4734122,20.2130503 47.0287481,22.7913438 C48.2606077,23.5609696 49.324025,24.6315109 50.0977132,25.9715783 C52.6575151,30.4052851 51.0764136,36.1104406 46.5662243,38.7143996 C44.7545438,39.7603738 42.7458253,40.1468611 40.8247736,39.9475443 Z M17.7359149,39.9578735 L0,39.9578735 L9.97645212,23.0071744 L9.9856166,23.0271944 L17.612509,10.0391874 L26.7377199,25.1999804 L26.7052149,25.1999804 C27.4889418,26.6155696 27.9340659,28.2374838 27.9340659,29.9613074 C27.9340659,35.4822584 23.3681982,39.9578735 17.7359149,39.9578735 Z" id="path-2"></path>
+        <filter x="-21.3%" y="-41.7%" width="142.7%" height="216.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" fill-rule="nonzero">
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
         </g>
     </g>
 </svg>

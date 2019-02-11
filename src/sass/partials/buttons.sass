@@ -1,0 +1,36 @@
+button
+  height: 3.125rem
+  width: auto
+  min-width: 7.5rem
+  border-radius: 0.3125rem
+  border: none
+  cursor: pointer
+  box-shadow: 0 .625rem 1.25rem 0 rgba(43, 43, 43, 0.2)
+  font-size: 1rem
+  font-weight: 500
+  font-family: 'Poppins', sans-serif
+  text-align: center
+  text-align: -webkit-center
+  padding: 0 1.5rem
+  position: relative
+  transition: ease-in-out 0.15s
+  &:hover
+    box-shadow: 0 1.25rem 1.25rem 0 rgba(43, 43, 43, 0.2)
+  &:focus
+    outline: none
+  &:active
+    box-shadow: 0 1.25rem 1.25rem 0 rgba(43, 43, 43, 0.2)
+
+.button--primary
+  background: $button-gradient
+  color: $white
+  &:hover
+    background: $button-gradient--hover
+  &:active
+    background: $button-gradient
+
+
+.button--secondary
+  background-color: $white
+  color: $blue
+  &:active

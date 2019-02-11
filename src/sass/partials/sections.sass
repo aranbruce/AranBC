@@ -1,0 +1,87 @@
+section
+  height: auto
+  width: 100%
+  margin: 0 auto
+
+.section--grey
+  background-color: $grey
+
+.section--home
+  background-image: url('../images/section__background--home.svg')
+  background-repeat: no-repeat
+  background-position: 45% 0%
+  min-height: 100vh
+  display: flex
+  align-items: center
+  @media screen and (min-width: $tablet)
+    background-position: 65% 0%
+  @media screen and (min-width: $laptop-medium)
+    background-position: 100% 0%
+    background-size: cover
+  .content-right
+    display: none
+    @media screen and (min-width: $tablet)
+      width: 50%
+      display: flex
+
+.section--thank-you
+  min-height: 100vh
+  display: flex
+  flex-wrap: wrap
+  background-image: url('../images/section__background--thank-you.svg')
+  background-repeat: no-repeat
+  background-position: 45% 0%
+  @media screen and (min-width: $tablet)
+    background-position: 65% 0%
+  @media screen and (min-width: $laptop-medium)
+    background-position: 100% 0%
+    background-size: cover
+  .section__content-vertical-center
+    display: flex
+    flex-wrap: wrap
+    align-content: center
+    h1, h4
+      width: 100%
+      text-align: center
+    a
+      margin: 0 auto
+
+
+.section__content
+  max-width: 75rem
+  margin: 0 auto
+  padding: 10rem 2rem
+  @media screen and (min-width: $mobile-large)
+    padding: 10rem 4rem
+  @media screen and (min-width: $tablet)
+    padding: 10rem 5rem
+  
+  .content--small
+    width: 100%
+    @media screen and (min-width: $tablet)
+      width: 40%
+  
+  .content--large
+    width: 100%
+    padding-bottom: 2rem
+    @media screen and (min-width: $tablet)
+      width: 50%
+      padding-bottom: 0
+
+.section__content-vertical-center
+  @extend .section__content
+  align-items: center
+  .content--left
+    width: 100%
+    @media screen and (min-width: $laptop-small)
+      width: 45%
+      min-width: 34rem
+      margin-right: auto
+  .content--right
+    display: none
+    @media screen and (min-width: $laptop-small)
+      display: flex
+      width: 38%
+
+.section__title
+  margin-bottom: 2rem

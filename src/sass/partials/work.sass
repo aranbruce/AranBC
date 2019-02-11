@@ -1,0 +1,17 @@
+#work
+    .work-item
+        width: 100%
+        margin-bottom: 4rem
+        transition: all .2s ease-in-out
+        &:last-child
+            margin-bottom: 0
+        &:nth-child(even)
+            @media screen and (min-width: $tablet)
+                margin-top: 10rem
+        @media screen and (min-width: $tablet)
+            width: 40%
+            justify-content: space-between
+        
+        &:hover
+            transform: scale(1.02)
+
