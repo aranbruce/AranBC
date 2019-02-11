@@ -24,6 +24,28 @@ section
       width: 50%
       display: flex
 
+.section--thank-you
+  min-height: 100vh
+  display: flex
+  flex-wrap: wrap
+  background-image: url('../images/section__background--thank-you.svg')
+  background-repeat: no-repeat
+  background-position: 45% 0%
+  @media screen and (min-width: $tablet)
+    background-position: 65% 0%
+  @media screen and (min-width: $laptop-medium)
+    background-position: 100% 0%
+    background-size: cover
+  .section__content-vertical-center
+    display: flex
+    flex-wrap: wrap
+    align-content: center
+    h1, h4
+      width: 100%
+      text-align: center
+    a
+      margin: 0 auto
+
 
 .section__content
   max-width: 75rem

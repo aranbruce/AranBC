@@ -6,9 +6,9 @@ footer
             a(href="mailto:aran.brucecaddick@gmail.com?Subject=Hello", target="_top") aran.brucecaddick@gmail.com
             .social.extra-margin-top
                 a(href="https://www.linkedin.com/in/aran-bruce-caddick-a67b6790/", target="_blank", rel="noopener")
-                    img.linkedIn(data-src=require("../../images/linkedIn.svg"), alt="LinkedIn Icon")
+                    include ../../images/linkedIn.svg
                 a(href="https://www.github.com/aranbruce", target="_blank", rel="noopener")
-                    img.github(data-src=require("../../images/github.svg"), alt="Github Icon")
+                    include ../../images/github.svg
         .footer__right
             .footer-subsection
                 .footer-subsection-title.extra-margin-bottom Site
@@ -24,4 +24,5 @@ footer
                 .footer-subsection-title.extra-margin-bottom Legals
                 .footer-subsection-content
                     ul
-                        li Cookie Policy
+                        li 
+                            a(href='#' onclick="alert('Coming Soon')") Cookie Policy

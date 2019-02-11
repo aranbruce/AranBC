@@ -22,9 +22,13 @@ button
     box-shadow: 0 1.25rem 1.25rem 0 rgba(43, 43, 43, 0.2)
 
 .button--primary
-  background: linear-gradient(311.88deg, #8067FF 0%, #2CCDFF 100%)
+  background: $button-gradient
   color: $white
+  &:hover
+    background: $button-gradient--hover
   &:active
+    background: $button-gradient
+
 
 .button--secondary
   background-color: $white
