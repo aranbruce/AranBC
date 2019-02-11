@@ -34,11 +34,11 @@ const sitemapPaths = [
     //     priority: '0.9',
     //     changeFreq: 'monthly'
     // },
-    // {
-    //     path: '/thankyou',
-    //     priority: '0.3',
-    //     changeFreq: 'monthly'
-    // },
+    {
+        path: '/thankyou',
+        priority: '0.3',
+        changeFreq: 'monthly'
+    },
 ]
 
 module.exports = {
