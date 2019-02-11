@@ -98,7 +98,8 @@ nav
             color: black
             .button--secondary
                 @extend .button--primary
-                box-shadow: none
+                @media screen and (min-width: $tablet)
+                    box-shadow: none
                 transition: ease-in-out 0.2s
         a
             @extend a
