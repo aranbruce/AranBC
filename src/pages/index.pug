@@ -2,16 +2,16 @@
 extends ../layouts/layout.pug
 block head
     - var title = 'Aran Bruce-Caddick'
-    - var metaDescription = 'Creating Digital Experiences. Specialising in developing and executing creative projects across digital mediums.'
+    - var metaDescription = 'Crafting Stunning Digital Experiences. Specialising in developing and executing creative projects across digital mediums.'
 
 //- body
 block body
     include ../partials/globals/navigation--main.pug
-    include ../partials/sections/header--home.pug
-    include ../partials/sections/work.pug
-    include ../partials/sections/skills.pug
-    include ../partials/sections/about-me.pug
-    include ../partials/sections/form.pug
+    include ../partials/sections/home/header--home.pug
+    include ../partials/sections/home/work.pug
+    include ../partials/sections/home/skills.pug
+    include ../partials/sections/home/about-me.pug
+    include ../partials/sections/home/form.pug
     include ../partials/globals/footer.pug
     //- scripts
     script(src='scripts/main.js')

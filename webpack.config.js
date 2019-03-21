@@ -29,11 +29,11 @@ const sitemapPaths = [
         priority: '1',
         changeFreq: 'monthly'
     },
-    // {
-    //     path: '/citysnapp',
-    //     priority: '0.9',
-    //     changeFreq: 'monthly'
-    // },
+    {
+        path: '/dynamo',
+        priority: '0.9',
+        changeFreq: 'monthly'
+    },
     {
         path: '/thankyou',
         priority: '0.3',
@@ -119,14 +119,14 @@ module.exports = {
             template: "./src/pages/index.pug",
             favicon: "./src/images/favicon.png"
         }),
-        // new HtmlWebpackPlugin({
-        //     minify: {
-        //         collapseWhiteSpace: true
-        //     },
-        //     filename: "citysnapp.html",
-        //     template: "./src/pages/citysnapp.pug",
-        //     favicon: "./src/images/favicon.png"
-        // }),
+        new HtmlWebpackPlugin({
+            minify: {
+                collapseWhiteSpace: true
+            },
+            filename: "dynamo.html",
+            template: "./src/pages/dynamo.pug",
+            favicon: "./src/images/favicon.png"
+        }),
         new HtmlWebpackPlugin({
             minify: {
                 collapseWhiteSpace: true

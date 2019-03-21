@@ -1,0 +1,17 @@
+//- head
+extends ../layouts/layout.pug
+block head
+    - var title = 'Work - Dynamo'
+    - var metaDescription ='Work done for Dynamo - Website, Web App, and CRM.'
+
+//- body
+block body
+    include ../partials/globals/navigation--main.pug
+    include ../partials/sections/dynamo/header--dynamo.pug
+    include ../partials/sections/dynamo/website.pug
+    include ../partials/sections/dynamo/webapp.pug
+    include ../partials/sections/dynamo/crm.pug
+    include ../partials/globals/footer.pug
+    //- scripts
+    script(src='scripts/main.js')
+    

@@ -6,6 +6,15 @@ section
 .section--grey
   background-color: $grey
 
+.section--aqua
+  background-color: $aqua
+
+.section--light-purple
+  background-color: $light-purple
+
+.section--light-yellow
+  background-color: $light-yellow
+
 .section--home
   background-image: url('../images/section__background--home.svg')
   background-repeat: no-repeat
@@ -46,6 +55,18 @@ section
     a
       margin: 0 auto
 
+.section--work
+  min-height: 100vh
+  display: flex
+  flex-wrap: wrap
+  background-image: url('../images/section__background--thank-you.svg')
+  background-repeat: no-repeat
+  background-position: 45% 0%
+  @media screen and (min-width: $tablet)
+    background-position: 65% 0%
+  @media screen and (min-width: $laptop-medium)
+    background-position: 100% 0%
+    background-size: cover
 
 .section__content
   max-width: 75rem
@@ -67,6 +88,11 @@ section
     @media screen and (min-width: $tablet)
       width: 50%
       padding-bottom: 0
+  
+  .content--extra-large
+    width: 100%
+    @media screen and (min-width: $tablet)
+      width: 65%
 
 .section__content-vertical-center
   @extend .section__content
@@ -82,6 +108,10 @@ section
     @media screen and (min-width: $laptop-small)
       display: flex
       width: 38%
+
+.section__content-full-width
+  @extend .section__content
+  width: 100%
 
 .section__title
   margin-bottom: 2rem
