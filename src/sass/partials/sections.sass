@@ -37,7 +37,7 @@ section
   min-height: 100vh
   display: flex
   flex-wrap: wrap
-  background-image: url('../images/section__background--thank-you.svg')
+  background-image: url('../images/section__background--blue.svg')
   background-repeat: no-repeat
   background-position: 45% 0%
   @media screen and (min-width: $tablet)
@@ -59,7 +59,18 @@ section
   min-height: 100vh
   display: flex
   flex-wrap: wrap
-  background-image: url('../images/section__background--thank-you.svg')
+  background-image: url('../images/section__background--blue.svg')
+  background-repeat: no-repeat
+  background-position: 45% 0%
+  @media screen and (min-width: $tablet)
+    background-position: 65% 0%
+  @media screen and (min-width: $laptop-medium)
+    background-position: 100% 0%
+    background-size: cover
+
+.section--work-orange
+  @extend .section--work
+  background-image: url('../images/section__background--orange.svg')
   background-repeat: no-repeat
   background-position: 45% 0%
   @media screen and (min-width: $tablet)

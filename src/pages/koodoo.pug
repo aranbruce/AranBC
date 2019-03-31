@@ -1,0 +1,16 @@
+//- head
+extends ../layouts/layout.pug
+block head
+    - var title = 'Work - Koodoo'
+    - var metaDescription ='Work done for Koodoo - Website, API Suite.'
+
+//- body
+block body
+    include ../partials/globals/navigation--main.pug
+    include ../partials/sections/koodoo/header--koodoo.pug
+    include ../partials/sections/koodoo/website.pug
+    include ../partials/sections/koodoo/api.pug
+    include ../partials/globals/footer.pug
+    //- scripts
+    script(src='scripts/main.js')
+    

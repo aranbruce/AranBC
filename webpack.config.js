@@ -35,6 +35,11 @@ const sitemapPaths = [
         changeFreq: 'monthly'
     },
     {
+        path: '/koodoo',
+        priority: '0.9',
+        changeFreq: 'monthly'
+    },
+    {
         path: '/thankyou',
         priority: '0.3',
         changeFreq: 'monthly'
@@ -125,6 +130,14 @@ module.exports = {
             },
             filename: "dynamo.html",
             template: "./src/pages/dynamo.pug",
+            favicon: "./src/images/favicon.png"
+        }),
+        new HtmlWebpackPlugin({
+            minify: {
+                collapseWhiteSpace: true
+            },
+            filename: "koodoo.html",
+            template: "./src/pages/koodoo.pug",
             favicon: "./src/images/favicon.png"
         }),
         new HtmlWebpackPlugin({
