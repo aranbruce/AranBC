@@ -9,6 +9,7 @@ var config = {
     localRoot: __dirname + "/../dist/",
     remoteRoot: "public_html",
     include: ['*'],
+    exclude: [],
     deleteRemote: true, 
 }
 
