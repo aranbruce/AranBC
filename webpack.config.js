@@ -9,19 +9,6 @@ const {GenerateSW} = require('workbox-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
 
-// paths to be cleaned
-let pathsToClean = [
-    'dist'
-]
-
-// the clean options to use
-let cleanOptions = {
-    root: path.resolve(__dirname),
-    exclude: ['.htaccess'],
-    verbose: true,
-    dry: false
-}
-
 // sitemap paths
 const sitemapPaths = [
     {
@@ -51,7 +38,7 @@ module.exports = {
         main: "./src/scripts/index.js"
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(process.cwd(), 'dist'),
         filename: "scripts/main.js"
     },
 
@@ -148,7 +135,14 @@ module.exports = {
             template: "./src/pages/thankyou.pug",
             favicon: "./src/images/favicon.png"
         }),
-        new CleanWebpackPlugin(pathsToClean, cleanOptions),
+
+        new CleanWebpackPlugin({
+            dry: false,
+            verbose: true,
+            cleanOnceBeforeBuildPatterns: ['**/*', '!.htaccess'],
+
+        }),
+
         new SitemapPlugin(
             'https://www.aranbc.com',
             sitemapPaths,
