@@ -8,9 +8,9 @@ var config = {
     port: 21,
     localRoot: __dirname + "/../dist/",
     remoteRoot: "public_html",
-    include: ['*', '.htaccess'],
+    include: ['*'],
     exclude: [],
-    deleteRemote: true, 
+    deleteRemote: false, 
 }
 
 // use with callback
