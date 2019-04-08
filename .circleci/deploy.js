@@ -8,10 +8,29 @@ var config = {
     port: 21,
     localRoot: __dirname + "/../dist/",
     remoteRoot: "public_html",
-    include: ['*']
+    include: ['*'],
+    deleteRemote: true, 
 }
     
-ftpDeploy.deploy(config, function(err) {
+// use with promises
+ftpDeploy.deploy(config)
+    .then(res => console.log('finished:', res))
+    .catch(err => console.log(err))
+    
+// use with callback
+ftpDeploy.deploy(config, function(err, res) {
     if (err) console.log(err)
-    else console.log('finished');
+    else console.log('finished:', res);
+});
+
+ftpDeploy.on('uploading', function(data) {
+    data.totalFilesCount;       // total file count being transferred
+    data.transferredFileCount; // number of files transferred
+    data.filename;             // partial path with filename being uploaded
+});
+ftpDeploy.on('uploaded', function(data) {
+    console.log(data);         // same data as uploading event
+});
+ftpDeploy.on('log', function(data) {
+    console.log(data);         // same data as uploading event
 });
