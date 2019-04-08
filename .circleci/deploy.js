@@ -11,12 +11,7 @@ var config = {
     include: ['*'],
     deleteRemote: true, 
 }
-    
-// use with promises
-ftpDeploy.deploy(config)
-    .then(res => console.log('finished:', res))
-    .catch(err => console.log(err))
-    
+
 // use with callback
 ftpDeploy.deploy(config, function(err, res) {
     if (err) console.log(err)
