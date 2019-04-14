@@ -6,7 +6,6 @@ version: 2
 jobs:
   build:
     docker:
-      # specify the version you desire here
       - image: circleci/node:10.15
 
       # Specify service dependencies here if necessary
@@ -18,7 +17,6 @@ jobs:
     
     steps:
       - checkout
-      # Download and cache dependencies
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
@@ -33,35 +31,21 @@ jobs:
       - save_cache:
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-      
-      # Persist the specified paths (workspace/echo-output) into the workspace for use in downstream job. 
+          key: v1-dependencies-{{ checksum "package.json" }}      
       - persist_to_workspace:
-          # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is 
-          # taken to be the root directory of the workspace.
           root: ~/repo
-          # Must be relative path from root
           paths:
             - .
 
   deploy:
     docker:
-      # specify the version you desire here
       - image: circleci/node:10.15
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
+    
     working_directory: ~/repo
     
     steps:
       - attach_workspace:
-          # Must be absolute path or relative path from working_directory
           at: ~/repo
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "requirements.txt" }}
       - run:
           name: Install AWS dependencies
           command: |
@@ -77,10 +61,6 @@ jobs:
             aws s3 cp s3://www.aranbc.com/thankyou s3://www.aranbc.com/thankyou --content-type "text/html" --metadata-directive REPLACE
             aws s3 cp s3://www.aranbc.com/404 s3://www.aranbc.com/404 --content-type "text/html" --metadata-directive REPLACE
       - run: echo "WE'RE ONLINE"
-      - save_cache:
-          paths:
-            - Pipfile
-          key: v1-dependencies-{{ checksum "requirements.txt" }}
 
 workflows:
   version: 2
