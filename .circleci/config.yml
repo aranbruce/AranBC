@@ -59,6 +59,9 @@ jobs:
       - attach_workspace:
           # Must be absolute path or relative path from working_directory
           at: ~/repo
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "requirements.txt" }}
       - run:
           name: Install AWS dependencies
           command: |
@@ -74,6 +77,10 @@ jobs:
             aws s3 cp s3://www.aranbc.com/thankyou s3://www.aranbc.com/thankyou --content-type "text/html" --metadata-directive REPLACE
             aws s3 cp s3://www.aranbc.com/404 s3://www.aranbc.com/404 --content-type "text/html" --metadata-directive REPLACE
       - run: echo "WE'RE ONLINE"
+      - save_cache:
+          paths:
+            - Pipfile
+          key: v1-dependencies-{{ checksum "requirements.txt" }}
 
 workflows:
   version: 2
