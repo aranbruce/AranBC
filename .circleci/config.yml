@@ -44,10 +44,10 @@ jobs:
           name: Deploy to S3
           command: |
             aws s3 sync dist s3://www.aranbc.com/ --delete
-            aws s3 mv s3://www.aranbc.com/dynamo s3://www.aranbc.com/dynamo --content-type "text/html"
-            aws s3 mv s3://www.aranbc.com/koodoo s3://www.aranbc.com/koodoo --content-type "text/html"
-            aws s3 mv s3://www.aranbc.com/thankyou s3://www.aranbc.com/thankyou --content-type "text/html"
-            aws s3 mv s3://www.aranbc.com/404 s3://www.aranbc.com/404 --content-type "text/html"
+            aws s3 cp s3://www.aranbc.com/dynamo s3://www.aranbc.com/dynamo --content-type "text/html"
+            aws s3 cp s3://www.aranbc.com/koodoo s3://www.aranbc.com/koodoo --content-type "text/html"
+            aws s3 cp s3://www.aranbc.com/thankyou s3://www.aranbc.com/thankyou --content-type "text/html"
+            aws s3 cp s3://www.aranbc.com/404 s3://www.aranbc.com/404 --content-type "text/html"
       - run: echo "WE'RE ONLINE"
 
 workflows:
