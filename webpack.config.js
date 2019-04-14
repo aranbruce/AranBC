@@ -115,7 +115,7 @@ module.exports = {
             minify: {
                 collapseWhiteSpace: true
             },
-            filename: "dynamo.html",
+            filename: "dynamo",
             template: "./src/pages/dynamo.pug",
             favicon: "./src/images/favicon.png"
         }),
@@ -123,7 +123,7 @@ module.exports = {
             minify: {
                 collapseWhiteSpace: true
             },
-            filename: "koodoo.html",
+            filename: "koodoo",
             template: "./src/pages/koodoo.pug",
             favicon: "./src/images/favicon.png"
         }),
@@ -131,8 +131,16 @@ module.exports = {
             minify: {
                 collapseWhiteSpace: true
             },
-            filename: "thankyou.html",
+            filename: "thankyou",
             template: "./src/pages/thankyou.pug",
+            favicon: "./src/images/favicon.png"
+        }),
+        new HtmlWebpackPlugin({
+            minify: {
+                collapseWhiteSpace: true
+            },
+            filename: "404",
+            template: "./src/pages/404.pug",
             favicon: "./src/images/favicon.png"
         }),
 
@@ -141,14 +149,6 @@ module.exports = {
             verbose: true,
             cleanOnceBeforeBuildPatterns: ['**/*'],
 
-        }),
-        new HtmlWebpackPlugin({
-            minify: {
-                collapseWhiteSpace: true
-            },
-            filename: "404.html",
-            template: "./src/pages/404.pug",
-            favicon: "./src/images/favicon.png"
         }),
 
         new SitemapPlugin(
