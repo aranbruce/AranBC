@@ -139,7 +139,7 @@ module.exports = {
         new CleanWebpackPlugin({
             dry: false,
             verbose: true,
-            cleanOnceBeforeBuildPatterns: ['**/*', '!.htaccess', '!.well-known', '!.well-known/**'],
+            cleanOnceBeforeBuildPatterns: ['**/*'],
 
         }),
 

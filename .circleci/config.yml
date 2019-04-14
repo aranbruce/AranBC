@@ -18,20 +18,35 @@ jobs:
     
     steps:
       - checkout
-
       # Download and cache dependencies
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-      - run: npm install
-      - run: npm run build
+      - run: 
+          name: Install Build Dependencies
+          command: npm install
+      - run: 
+          name: Build
+          command: npm run build
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: node .circleci/deploy.js
+      - run:
+          name: Install AWS dependencies
+          command: |
+            sudo apt update
+            sudo apt install -y python-pip python-dev
+            sudo pip install awscli
+      - run:
+          name: Deploy to S3
+          command: |
+            aws s3 sync dist s3://www.aranbc.com/ --delete
+            aws s3 mv s3://www.aranbc.com/dynamo.html s3://www.aranbc.com/dynamo --content-type "text/html"
+            aws s3 mv s3://www.aranbc.com/koodoo.html s3://www.aranbc.com/koodoo --content-type "text/html"
+            aws s3 mv s3://www.aranbc.com/thankyou.html s3://www.aranbc.com/thankyou --content-type "text/html"
       - run: echo "WE'RE ONLINE"
 
 workflows:
