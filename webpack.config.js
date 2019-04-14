@@ -107,7 +107,7 @@ module.exports = {
             minify: {
                 collapseWhiteSpace: true
             },
-            filename: "index.html",
+            filename: "index",
             template: "./src/pages/index.pug",
             favicon: "./src/images/favicon.png"
         }),

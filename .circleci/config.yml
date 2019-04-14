@@ -34,6 +34,31 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+      
+      # Persist the specified paths (workspace/echo-output) into the workspace for use in downstream job. 
+      - persist_to_workspace:
+          # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is 
+          # taken to be the root directory of the workspace.
+          root: ~/repo
+          # Must be relative path from root
+          paths:
+            - .
+
+  deploy:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:10.15
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/mongo:3.4.4
+    working_directory: ~/repo
+    
+    steps:
+      - attach_workspace:
+          # Must be absolute path or relative path from working_directory
+          at: ~/repo
       - run:
           name: Install AWS dependencies
           command: |
@@ -52,9 +77,12 @@ jobs:
 
 workflows:
   version: 2
-  deploy:
+  build and deploy:
     jobs:
-      - build:
+      - build
+      - deploy:
+          requires:
+            - build
           filters:
             branches:
               only:
