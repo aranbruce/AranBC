@@ -47,6 +47,7 @@ jobs:
             aws s3 mv s3://www.aranbc.com/dynamo.html s3://www.aranbc.com/dynamo --content-type "text/html"
             aws s3 mv s3://www.aranbc.com/koodoo.html s3://www.aranbc.com/koodoo --content-type "text/html"
             aws s3 mv s3://www.aranbc.com/thankyou.html s3://www.aranbc.com/thankyou --content-type "text/html"
+            aws s3 mv s3://www.aranbc.com/404.html s3://www.aranbc.com/404 --content-type "text/html"
       - run: echo "WE'RE ONLINE"
 
 workflows:

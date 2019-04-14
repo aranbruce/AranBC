@@ -142,6 +142,14 @@ module.exports = {
             cleanOnceBeforeBuildPatterns: ['**/*'],
 
         }),
+        new HtmlWebpackPlugin({
+            minify: {
+                collapseWhiteSpace: true
+            },
+            filename: "404.html",
+            template: "./src/pages/404.pug",
+            favicon: "./src/images/favicon.png"
+        }),
 
         new SitemapPlugin(
             'https://www.aranbc.com',

@@ -1,0 +1,16 @@
+//- head
+extends ../layouts/layout.pug
+block head
+    - var title = '404 Page'
+    - var metaDescription ='404 - Looks like something\s went wrong, how embarrasing'
+    - var canonical = 'https://www.aranbc.com/thankyou'
+
+//- body
+block body
+    include ../partials/globals/navigation--main.pug
+
+    include ../partials/sections/404/404.pug
+
+    include ../partials/globals/footer.pug
+    //- scripts
+    script(src='scripts/main.js')
