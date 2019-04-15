@@ -1,5 +1,11 @@
 const shareIcon = document.querySelector('.share-icon');
 
+//Hide share butotn if not supported
+if (!navigator.share) {
+    shareIcon.style.display = "none";
+}
+
+// Add share functionality
 if (shareIcon) {
     shareIcon.addEventListener('click', () => {
     if (navigator.share) {
