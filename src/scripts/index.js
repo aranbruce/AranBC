@@ -6,3 +6,4 @@ import "../scripts/openCloseMenu.js";
 import "../scripts/smoothScroll.js";
 import "../scripts/startLazyLoad.js";
 import "../scripts/swRegister.js";
+import "../scripts/webShare.js";
