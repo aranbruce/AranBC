@@ -5,8 +5,8 @@ section#form
             h2 Get in Touch
         form#enquiryForm
             .form__wrapper
-                input(type="text", name="NAME", placeholder="Name" required)
-                input(type="email", name="EMAIL", placeholder="Email" required)
-                input(type="text", name="SUBJECT", placeholder="Subject" required)
-                textarea(name="MESSAGE",placeholder="Message" required)
+                input(type="text", name="NAME", aria-label="Name", placeholder="Name" required)
+                input(type="email", name="EMAIL", aria-label="Email", placeholder="Email" required)
+                input(type="text", name="SUBJECT", aria-label="Subject", placeholder="Subject" required)
+                textarea(name="MESSAGE",placeholder="Message", aria-label="Message", required)
                 button.button--primary#formButton(type="submit", value="Send") Send
