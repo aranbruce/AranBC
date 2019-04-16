@@ -17,6 +17,11 @@ const sitemapPaths = [
         changeFreq: 'monthly'
     },
     {
+        path: '/citysnapp',
+        priority: '0.9',
+        changeFreq: 'monthly'
+    },
+    {
         path: '/dynamo',
         priority: '0.9',
         changeFreq: 'monthly'
@@ -109,6 +114,14 @@ module.exports = {
             },
             filename: "index.html",
             template: "./src/pages/index.pug",
+            favicon: "./src/images/favicon.png"
+        }),
+        new HtmlWebpackPlugin({
+            minify: {
+                collapseWhiteSpace: true
+            },
+            filename: "citysnapp",
+            template: "./src/pages/citysnapp.pug",
             favicon: "./src/images/favicon.png"
         }),
         new HtmlWebpackPlugin({
