@@ -115,6 +115,14 @@ module.exports = {
             minify: {
                 collapseWhiteSpace: true
             },
+            filename: "citysnapp",
+            template: "./src/pages/citysnapp.pug",
+            favicon: "./src/images/favicon.png"
+        }),
+        new HtmlWebpackPlugin({
+            minify: {
+                collapseWhiteSpace: true
+            },
             filename: "dynamo",
             template: "./src/pages/dynamo.pug",
             favicon: "./src/images/favicon.png"

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1024px" viewBox="0 0 1440 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>section__background--peach</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FE9A8B" offset="0%"></stop>
+            <stop stop-color="#FD868C" offset="37.0475925%"></stop>
+            <stop stop-color="#F9748F" offset="77.5550064%"></stop>
+            <stop stop-color="#F78CA0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="section__background--peach" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.8">
+        <path d="M1253.02114,238.533898 C1324.91669,174.366568 1396.68775,244.028507 1440,286.515435 C1440,249.441752 1439.85378,153.936607 1439.56133,0 C1013.47684,0 753.137153,0 658.542281,0 C627.811621,52.2202171 735.936123,25.7886798 713.225296,88.3578983 C682.62416,172.665231 963.277212,101.02503 1044.6956,236.515435 C1086.75974,306.515435 1223.97615,264.456775 1253.02114,238.533898 Z" id="section__background--thank-you" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+    </g>
+</svg>

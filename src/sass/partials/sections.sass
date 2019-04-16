@@ -15,6 +15,9 @@ section
 .section--light-yellow
   background-color: $light-yellow
 
+.section--light-peach
+  background-color: linear-gradient(45deg, #FE9A8B 0%, #FD868C 37%, #F9748F 77%, #F78CA0 100%)
+
 .section--home
   background-image: url('../images/section__background--home.svg')
   background-repeat: no-repeat
@@ -71,6 +74,17 @@ section
 .section--work-orange
   @extend .section--work
   background-image: url('../images/section__background--orange.svg')
+  background-repeat: no-repeat
+  background-position: 45% 0%
+  @media screen and (min-width: $tablet)
+    background-position: 65% 0%
+  @media screen and (min-width: $laptop-medium)
+    background-position: 100% 0%
+    background-size: cover
+
+.section--work-peach
+  @extend .section--work
+  background-image: url('../images/section__background--peach.svg')
   background-repeat: no-repeat
   background-position: 45% 0%
   @media screen and (min-width: $tablet)
