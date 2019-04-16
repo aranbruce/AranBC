@@ -17,6 +17,11 @@ const sitemapPaths = [
         changeFreq: 'monthly'
     },
     {
+        path: '/citysnapp',
+        priority: '0.9',
+        changeFreq: 'monthly'
+    },
+    {
         path: '/dynamo',
         priority: '0.9',
         changeFreq: 'monthly'
