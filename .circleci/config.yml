@@ -3,8 +3,10 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2
+orbs:
+  lighthouse-keeper: itinerisltd/lighthouse-keeper@0.1.4
 jobs:
-  build:
+  Build:
     docker:
       - image: circleci/node:10.15
 
@@ -36,8 +38,79 @@ jobs:
           root: ~/repo
           paths:
             - .
+  Deploy to Staging:
+    docker:
+      - image: circleci/node:10.15
+    
+    working_directory: ~/repo
+    
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Install AWS dependencies
+          command: |
+            sudo apt update
+            sudo apt install -y python-pip python-dev
+            sudo pip install awscli
+      - run:
+          name: Deploy to S3
+          command: |
+            aws s3 sync dist s3://staging.aranbc.com/ --delete
+            aws s3 cp s3://staging.aranbc.com/dynamo s3://staging.aranbc.com/dynamo --content-type "text/html" --metadata-directive REPLACE
+            aws s3 cp s3://staging.aranbc.com/citysnapp s3://staging.aranbc.com/citysnapp --content-type "text/html" --metadata-directive REPLACE
+            aws s3 cp s3://staging.aranbc.com/koodoo s3://staging.aranbc.com/koodoo --content-type "text/html" --metadata-directive REPLACE
+            aws s3 cp s3://staging.aranbc.com/thankyou s3://staging.aranbc.com/thankyou --content-type "text/html" --metadata-directive REPLACE
+            aws s3 cp s3://staging.aranbc.com/404 s3://staging.aranbc.com/404 --content-type "text/html" --metadata-directive REPLACE
+      - run: echo "AT STAGING"
+      - persist_to_workspace:
+          root: ~/repo
+          paths:
+            - .
 
-  deploy:
+  Performance Tests:
+    parallelism: 4
+    docker:
+      - image: kporras07/lighthouse-ci
+
+    steps:
+      - checkout
+
+      - run:
+          name: Run lighthouse against staging deployment
+          environment:
+            TEST_URL: https://staging.aranbc.com
+          command: |
+            lighthouse $TEST_URL \
+              --port=9222 \
+              --chrome-flags=\"--headless\" \
+              --output-path=/home/chrome/reports/anonymous-"$(echo -n $CIRCLE_SHELL_ENV | md5sum | awk '{print $1}')" \
+              --output=json \
+              --output=html
+      - persist_to_workspace:
+          root: /home/chrome
+          paths:
+            - reports
+  
+  Process Results:
+    docker:
+      - image: circleci/node:10.15.0
+
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-v1-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
+      - attach_workspace:
+          at: "."
+      - store_artifacts:
+          path: reports
+          destination: reports
+      - run:
+          name: Analyze and report desired vs actual lighthouse scores
+          command: "node ./.circleci/ci-scripts/analyse-scores.js package.json reports"
+
+  Deploy to Live:
     docker:
       - image: circleci/node:10.15
     
@@ -65,12 +138,22 @@ jobs:
 
 workflows:
   version: 2
-  build and deploy:
+  Build, Test and Deploy:
     jobs:
-      - build
-      - deploy:
+      - Build
+      - Deploy to Staging:
           requires:
-            - build
+            - Build
+      
+      - Performance Tests:
+          requires:
+              - Deploy to Staging
+      - Process Results:
+          requires:
+              - Performance Tests
+      - Deploy to Live:
+          requires:
+            - Process Results
           filters:
             branches:
               only:
