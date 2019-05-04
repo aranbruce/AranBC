@@ -7,7 +7,7 @@ version: 2
 jobs:
   Build:
     docker:
-      - image: circleci/node:10.15
+      - image: circleci/node:lts
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -39,7 +39,7 @@ jobs:
             - .
   Deploy to Staging:
     docker:
-      - image: circleci/node:10.15
+      - image: circleci/python:latest
     
     working_directory: ~/repo
     
@@ -47,11 +47,8 @@ jobs:
       - attach_workspace:
           at: ~/repo
       - run:
-          name: Install AWS dependencies
-          command: |
-            sudo apt update
-            sudo apt install -y python-pip python-dev
-            sudo pip install awscli
+          name: Install AWS CLI
+          command: sudo pip install awscli
       - run:
           name: Deploy to S3
           command: |
@@ -66,11 +63,11 @@ jobs:
           root: ~/repo
           paths:
             - .
-
+      
   Performance Tests:
-    parallelism: 4
+    parallelism: 1
     docker:
-      - image: circleci/node:10.15-browsers
+      - image: circleci/node:lts-browsers
 
     steps:
       - checkout
@@ -95,7 +92,8 @@ jobs:
               --chrome-flags=\"--headless\" \
               --output-path=/home/chrome/reports/anonymous-"$(echo -n $CIRCLE_SHELL_ENV | md5sum | awk '{print $1}')" \
               --output=json \
-              --output=html      
+              --output=html \
+              --no-enable-error-reporting 
       - run:
           name: Turn Off Development Mode
           command: |
@@ -113,7 +111,7 @@ jobs:
 
   Deploy to Live:
     docker:
-      - image: circleci/node:10.15
+      - image: circleci/python:latest
     
     working_directory: ~/repo
     
@@ -121,10 +119,8 @@ jobs:
       - attach_workspace:
           at: ~/repo
       - run:
-          name: Install AWS dependencies
+          name: Install AWS CLI
           command: |
-            sudo apt update
-            sudo apt install -y python-pip python-dev
             sudo pip install awscli
       - run:
           name: Deploy to S3
