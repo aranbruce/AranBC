@@ -4,9 +4,8 @@
   "description": "AranBC Personal Website",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open --watch ",
-    "build": "webpack --mode production",
-    "test": "jest"
+    "dev": "webpack-dev-server --mode development --open --watch --https --cert ~/.localhost-ssl/private.pem --key ~/.localhost-ssl/private.key",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
