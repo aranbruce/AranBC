@@ -18,11 +18,9 @@ window.onload = function() {
     function toggleMenu() {
       if (burger.classList.contains('burger-container--close')) {
         closeMenu();
-        console.log("close");
       }
       else if (!burger.classList.contains('burger-container--close')) {
         openMenu();
-        console.log("open");
       }
     }
 
