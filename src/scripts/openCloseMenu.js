@@ -7,12 +7,12 @@ window.onload = function() {
 
     function openMenu() {
       menu.classList.add("show");
-      burger.classList.toggle("burger-container--close");
+      burger.classList.add("burger-container--close");
     }
 
     function closeMenu() {
       menu.classList.remove("show");
-      burger.classList.toggle("burger-container--close");
+      burger.classList.remove("burger-container--close");
     }
 
     function toggleMenu() {
@@ -20,7 +20,7 @@ window.onload = function() {
         closeMenu();
         console.log("close");
       }
-      else {
+      else if (!burger.classList.contains('burger-container--close')) {
         openMenu();
         console.log("open");
       }
