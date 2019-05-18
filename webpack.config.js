@@ -1,5 +1,6 @@
 // VARIABLES
 var WebpackPwaManifest = require('webpack-pwa-manifest');
+var ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 // CONSTANTS
 const path = require("path");
@@ -204,55 +205,14 @@ module.exports = {
                     destination: path.join("images/"),
                     ios: true,
                 },
-                // {
-                //     src: path.resolve("src/images/splash-screens/splash-launch-640x1136.png"),
-                //     destination: path.join("images/splash-screens/"),
-                //     size: 1336,
-                //     ios: "startup",
-                // },
-                // {
-                //     src: path.resolve("src/images/splash-screens/splash-launch-750x1294.png"),
-                //     destination: path.join("images/splash-screens/"),
-                //     size: 1294,
-                //     ios: "startup"
-                // },
-                // {
-                //     src: path.resolve("src/images/splash-screens/splash-launch-1242x2148.png"),
-                //     destination: path.join("images/splash-screens/"),
-                //     size: 2148,
-                //     ios: "startup"
-                // },
-                // {
-                //     src: path.resolve("src/images/splash-screens/splash-launch-1125x2436.png"),
-                //     destination: path.join("images/splash-screens/"),
-                //     size: 2436,
-                //     ios: "startup"
-                // },
-                // {
-                //     src: path.resolve("src/images/splash-screens/splash-launch-1242x2688.png"),
-                //     destination: path.join("images/splash-screens/"),
-                //     size: 2688,
-                //     ios: "startup"
-                // },
-                // {
-                //     src: path.resolve("src/images/splash-screens/splash-launch-1536x2048.png"),
-                //     destination: path.join("images/splash-screens/"),
-                //     size: 2048,
-                //     ios: "startup"
-                // },
-                // {
-                //     src: path.resolve("src/images/splash-screens/splash-launch-1668x2224.png"),
-                //     destination: path.join("images/splash-screens/"),
-                //     size: 2224,
-                //     ios: "startup"
-                // },
-                // {
-                //     src: path.resolve("src/images/splash-screens/splash-launch-2048x2732.png"),
-                //     destination: path.join("images/splash-screens/"),
-                //     size: 2732,
-                //     ios: "startup"
-                // },
             ]
+        
+        }),
+        new ImageminPlugin({
+            test: '**.png',
+            optipng: {
+                optimizationLevel: 9
+            }
         })
     ]
 }
