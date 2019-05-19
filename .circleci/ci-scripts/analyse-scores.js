@@ -57,21 +57,19 @@ const prComment = [];
 
   Object.keys(requiredScores).forEach(category => {
     const requiredOutOf100 = requiredScores[category];
-    const actualBestOutOf100 = Math.max.apply(
-      null,
-      scoresAcrossRunsByCategory[category]
-    );
+    const average = scoresAcrossRunsByCategory[category].reduce((a, b) => a + b, 0)/scoresAcrossRunsByCategory[category].length;
+    const averageOutOf100 = average;
 
-    if (actualBestOutOf100 < requiredScores[category]) {
-      ciStdout.push(`❌ ${category}: ${actualBestOutOf100}/${requiredOutOf100}`);
+    if (averageOutOf100 < requiredScores[category]) {
+      ciStdout.push(`❌ ${category}: ${averageOutOf100}/${requiredOutOf100}`);
       prComment.push(
-        `<strong>❌ ${category}:</strong> ${actualBestOutOf100}/${requiredOutOf100}<br />`
+        `<strong>❌ ${category}:</strong> ${averageOutOf100}/${requiredOutOf100}<br />`
       );
       success = false;
     } else {
-      ciStdout.push(`✅ ${category}: ${actualBestOutOf100}/${requiredOutOf100}`);
+      ciStdout.push(`✅ ${category}: ${averageOutOf100}/${requiredOutOf100}`);
       prComment.push(
-        `<strong>✅ ${category}:</strong> ${actualBestOutOf100}/${requiredOutOf100}<br />`
+        `<strong>✅ ${category}:</strong> ${averageOutOf100}/${requiredOutOf100}<br />`
       );
     }
   });
