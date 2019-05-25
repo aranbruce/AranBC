@@ -42,8 +42,9 @@ jobs:
           name: Deploy to S3
           command: |
             aws s3 sync dist s3://staging.aranbc.com/ --delete
-            aws s3 cp s3://staging.aranbc.com/dynamo s3://staging.aranbc.com/dynamo --content-type "text/html" --metadata-directive REPLACE
+            aws s3 cp s3://staging.aranbc.com/certius s3://staging.aranbc.com/certius --content-type "text/html" --metadata-directive REPLACE
             aws s3 cp s3://staging.aranbc.com/citysnapp s3://staging.aranbc.com/citysnapp --content-type "text/html" --metadata-directive REPLACE
+            aws s3 cp s3://staging.aranbc.com/dynamo s3://staging.aranbc.com/dynamo --content-type "text/html" --metadata-directive REPLACE
             aws s3 cp s3://staging.aranbc.com/koodoo s3://staging.aranbc.com/koodoo --content-type "text/html" --metadata-directive REPLACE
             aws s3 cp s3://staging.aranbc.com/thankyou s3://staging.aranbc.com/thankyou --content-type "text/html" --metadata-directive REPLACE
             aws s3 cp s3://staging.aranbc.com/404 s3://staging.aranbc.com/404 --content-type "text/html" --metadata-directive REPLACE
@@ -130,8 +131,9 @@ jobs:
           name: Deploy to S3
           command: |
             aws s3 sync dist s3://www.aranbc.com/ --delete
-            aws s3 cp s3://www.aranbc.com/dynamo s3://www.aranbc.com/dynamo --content-type "text/html" --metadata-directive REPLACE
+            aws s3 cp s3://www.aranbc.com/certius s3://www.aranbc.com/certius --content-type "text/html" --metadata-directive REPLACE
             aws s3 cp s3://www.aranbc.com/citysnapp s3://www.aranbc.com/citysnapp --content-type "text/html" --metadata-directive REPLACE
+            aws s3 cp s3://www.aranbc.com/dynamo s3://www.aranbc.com/dynamo --content-type "text/html" --metadata-directive REPLACE
             aws s3 cp s3://www.aranbc.com/koodoo s3://www.aranbc.com/koodoo --content-type "text/html" --metadata-directive REPLACE
             aws s3 cp s3://www.aranbc.com/thankyou s3://www.aranbc.com/thankyou --content-type "text/html" --metadata-directive REPLACE
             aws s3 cp s3://www.aranbc.com/404 s3://www.aranbc.com/404 --content-type "text/html" --metadata-directive REPLACE
