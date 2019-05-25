@@ -1,0 +1,18 @@
+//- head
+extends ../layouts/layout.pug
+block head
+    - var title = 'Work - Certius'
+    - var metaDescription ='Work done for Certius - Market Research, Competitor Analysis, and Website Design'
+    - var canonical = 'https://www.aranbc.com/certius'
+
+//- body
+block body
+    include ../partials/globals/navigation--main.pug
+    include ../partials/sections/certius/header--certius.pug
+    include ../partials/sections/certius/audiences.pug
+    include ../partials/sections/certius/site-structure.pug
+    include ../partials/sections/certius/website.pug
+    include ../partials/globals/footer.pug
+    //- scripts
+    script(src='scripts/main.js')
+    

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="953px" viewBox="0 0 375 953" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>certius-audiences--mobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5,0 L314,0 C316.761424,-5.07265313e-16 319,2.23857625 319,5 L319,893 L0,893 L-8.8817842e-16,5 C-1.2263553e-15,2.23857625 2.23857625,5.07265313e-16 5,0 Z" id="path-1"></path>
+        <filter x="-15.7%" y="-4.5%" width="131.3%" height="111.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="10" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.168627451   0 0 0 0 0.168627451   0 0 0 0 0.168627451  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Web-Pages-V4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Certius-/-Mobile" transform="translate(0.000000, -1650.000000)">
+            <g id="Section-2" transform="translate(0.000000, 1570.000000)">
+                <g id="certius-audiences--mobile" transform="translate(28.000000, 100.000000)">
+                    <g id="Mask" fill-rule="nonzero">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Group-4" transform="translate(24.000000, 648.000000)">
+                        <text id="3.-Assist-Lead-Gener" font-family="Poppins-Bold, Poppins" font-size="14" font-weight="bold" fill="#2B2B2B">
+                            <tspan x="10" y="25">3. Assist Lead Generation</tspan>
+                        </text>
+                        <text id="Calls-to-Action-for" font-family="Poppins-Regular, Poppins" font-size="14" font-weight="normal" fill="#2B2B2B">
+                            <tspan x="10" y="55">Calls to Action for Enquiries</tspan>
+                            <tspan x="10" y="75">Explicit Value Proposition</tspan>
+                        </text>
+                        <rect id="Rectangle-6" stroke="#373C45" stroke-width="2" fill-rule="nonzero" x="1" y="1" width="269" height="179"></rect>
+                    </g>
+                    <g id="Group-3" transform="translate(24.000000, 451.000000)">
+                        <rect id="Rectangle-6" stroke="#373C45" stroke-width="2" fill-rule="nonzero" x="1" y="1" width="269" height="179"></rect>
+                        <text id="2.-Aid-consideration" font-family="Poppins-Bold, Poppins" font-size="14" font-weight="bold" fill="#2B2B2B">
+                            <tspan x="10" y="25">2. Aid consideration as Business </tspan>
+                            <tspan x="10" y="45">Partner</tspan>
+                        </text>
+                        <text id="Signposting-of-Key-S" font-family="Poppins-Regular, Poppins" font-size="14" font-weight="normal" fill="#2B2B2B">
+                            <tspan x="10" y="75">Signposting of Key Services</tspan>
+                            <tspan x="10" y="95">Articulation of Iran’s Business </tspan>
+                            <tspan x="10" y="115">Opportunities</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-2" transform="translate(24.000000, 254.000000)">
+                        <rect id="Rectangle-6" stroke="#373C45" stroke-width="2" fill-rule="nonzero" x="1" y="1" width="269" height="179"></rect>
+                        <text id="1.-Establish-Thought" font-family="Poppins-Bold, Poppins" font-size="14" font-weight="bold" fill="#2B2B2B">
+                            <tspan x="10" y="25">1. Establish Thought Leadership &amp; </tspan>
+                            <tspan x="10" y="45">Authority</tspan>
+                        </text>
+                        <text id="Case-Studies-Blog-Po" font-family="Poppins-Regular, Poppins" font-size="14" font-weight="normal" fill="#2B2B2B">
+                            <tspan x="10" y="75">Case Studies</tspan>
+                            <tspan x="10" y="95">Blog Posts</tspan>
+                            <tspan x="10" y="115">Email Newsletters</tspan>
+                            <tspan x="10" y="135">Testimonials</tspan>
+                        </text>
+                    </g>
+                    <text id="Based-off-the-define" font-family="Poppins-Regular, Poppins" font-size="14" font-weight="normal" fill="#2B2B2B">
+                        <tspan x="24" y="193">Based off the defined audiences and </tspan>
+                        <tspan x="24" y="213">their objectives we are able to define 3 </tspan>
+                        <tspan x="24" y="233">key goals for the website:</tspan>
+                    </text>
+                    <text id="Audiences-and-Object" font-family="Poppins-Bold, Poppins" font-size="32" font-weight="bold" fill="#2B2B2B">
+                        <tspan x="24" y="98">Audiences and </tspan>
+                        <tspan x="24" y="143">Objectives</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -18,6 +18,11 @@ const sitemapPaths = [
         changeFreq: 'monthly'
     },
     {
+        path: '/certius',
+        priority: '0.9',
+        changeFreq: 'monthly'
+    },
+    {
         path: '/citysnapp',
         priority: '0.9',
         changeFreq: 'monthly'
@@ -115,6 +120,14 @@ module.exports = {
             },
             filename: "index.html",
             template: "./src/pages/index.pug",
+            favicon: "./src/images/favicon.png"
+        }),
+        new HtmlWebpackPlugin({
+            minify: {
+                collapseWhiteSpace: true
+            },
+            filename: "certius",
+            template: "./src/pages/certius.pug",
             favicon: "./src/images/favicon.png"
         }),
         new HtmlWebpackPlugin({
